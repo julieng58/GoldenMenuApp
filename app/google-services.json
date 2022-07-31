@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "804536175480",
+    "firebase_url": "https://goldenmenu-d5970.firebaseio.com",
+    "project_id": "goldenmenu-d5970",
+    "storage_bucket": "goldenmenu-d5970.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804536175480:android:42712f24e973551601168d",
+        "android_client_info": {
+          "package_name": "com.lebengy.goldenmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804536175480-tca12csk5load9lchsbdknqrnlncl6js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ8ddJMEjp55GAm02ExgZ2q1OOulquyio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804536175480-tca12csk5load9lchsbdknqrnlncl6js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

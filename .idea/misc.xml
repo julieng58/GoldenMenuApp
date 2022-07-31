@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_bouteillerose.xml" value="0.1935" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_magnum.xml" value="0.1935" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_verrerouge.xml" value="0.1935" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/amatica_sc.xml" value="0.215625" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/im_fell_french_canon.xml" value="0.215625" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/simonetta.xml" value="0.3927083333333333" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_accueil_vins.xml" value="0.33" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_bar.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_bieres.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_carte_vins.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_champagne.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_demi_bouteilles.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_les_menus.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_magnum.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_rose.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_vin_au_verre.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_vin_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_alsace_savoie_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_aperitif_bar.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bar.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_beaujolais_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_beaujolais_rouge.xml" value="0.33" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bordeaux_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bordelais.xml" value="0.3625" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_rouge.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_carte.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_carte_vins.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_demi_bouteilles.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_digestif_bar.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_et_aussi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_fournisseur.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_les_menus.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_rouge.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menu25.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menu32.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_nos_formules.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_plus_au_sud_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_plus_au_sud_rouge.xml" value="0.67" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_rhone_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vd_rhone_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vd_rhone_rouge.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vin_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vpd_blanc.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_whisky_bar.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/rose.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/xml/activity_main.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

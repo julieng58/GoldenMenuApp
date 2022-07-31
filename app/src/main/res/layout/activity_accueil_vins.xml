@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="#F8ECC9" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toTopOf="parent" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0" android:id="@+id/imageView3"/>
+    <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="90dp" android:layout_height="wrap_content" android:onClick="clickOnBar" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="150dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" app:srcCompat="@drawable/ic_alcool" android:id="@+id/imageButtonBar"/>
+    <ImageButton android:layout_marginEnd="32dp" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="clickOnBiere" app:layout_constraintEnd_toStartOf="@+id/imageButtonBar" app:layout_constraintStart_toEndOf="@+id/imageButtonChampagne" app:layout_constraintBottom_toBottomOf="@+id/imageButtonBar" android:layout_marginStart="32dp" app:srcCompat="@drawable/ic_biere" android:id="@+id/imageButtonBiere"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonBlanc"
+        android:layout_width="71dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="150dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnBlanc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRouge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRouge"
+        app:srcCompat="@drawable/ic_bouteilleblanc" />
+    <ImageButton android:background="#00FFFFFF" android:layout_width="87dp" android:layout_height="wrap_content" android:onClick="clickOnChampagne" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="@+id/imageButtonBiere" android:layout_marginStart="140dp" app:srcCompat="@drawable/ic_bouteillechampagne" android:id="@+id/imageButtonChampagne"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonRose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="150dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnRose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bouteillerose" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRouge"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnRouge"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRose"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonRose"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBlanc"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRose"
+        app:srcCompat="@drawable/ic_bouteillerouge" />
+    <ImageButton android:layout_marginEnd="32dp" android:scaleType="fitCenter" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="161dp" android:onClick="clickOnDemi" app:layout_constraintEnd_toStartOf="@+id/imageButtonMagnum" app:layout_constraintStart_toEndOf="@+id/imageButtonVerre" app:layout_constraintBottom_toBottomOf="@+id/imageButtonMagnum" android:layout_marginStart="32dp" app:srcCompat="@drawable/ic_demi" android:id="@+id/imageButtonDemi"/>
+    <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="clickOnMagnum" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" app:srcCompat="@drawable/ic_magnum" android:id="@+id/imageButtonMagnum"/>
+    <ImageButton android:scaleType="fitCenter" android:background="#00FFFFFF" android:layout_width="72dp" android:layout_height="128dp" android:onClick="clickOnVinVerre" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="@+id/imageButtonDemi" android:layout_marginStart="140dp" app:srcCompat="@drawable/ic_verrerouge" android:id="@+id/imageButtonVerre"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBlanc" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBlanc" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBlanc" android:id="@+id/textView4" android:text="Nos blancs"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonRouge" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonRouge" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRouge" android:id="@+id/textView7" android:text="Nos rouges"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonRose" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonRose" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" android:id="@+id/textView8" android:text="Nos rosés"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonMagnum" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonMagnum" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" android:id="@+id/textView9" android:text="Nos magnums"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonDemi" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonDemi" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonDemi" android:id="@+id/textView10" android:text="Nos demies\nbouteilles"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonVerre" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonVerre" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonVerre" android:id="@+id/textView17" android:text="Nos verres"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonChampagne" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonChampagne" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonChampagne" android:id="@+id/textView15" android:text="Nos champagnes"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBiere" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBiere" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" android:id="@+id/textView16" android:text="Nos bières"/>
+    <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBar" android:fontFamily="@font/josefin_sans" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBar" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBar" android:id="@+id/textView14" android:text="Notre bar\nNos sans alcools"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
