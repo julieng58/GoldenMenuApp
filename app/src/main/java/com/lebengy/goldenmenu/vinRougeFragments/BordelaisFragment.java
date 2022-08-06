@@ -59,7 +59,7 @@ public class BordelaisFragment extends Fragment {
     }
 
     public void fetchVins(final View v) {
-        this.db.collection("Vin").whereEqualTo("type", Integer.valueOf((int) 2)).whereEqualTo("region", Integer.valueOf((int) 4)).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.BordelaisFragment.1
+        this.db.collection("Vin").whereEqualTo("type", 2).whereEqualTo("region", 4).whereArrayContains("contenant", "75").orderBy("prix75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.BordelaisFragment.1
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -159,15 +159,15 @@ public class BordelaisFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
         Iterator it = arrayList4.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList5.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         int i = 0;
         for (Integer num : this.hashMapVins.keySet()) {
@@ -186,7 +186,7 @@ public class BordelaisFragment extends Fragment {
                 textView4.setVisibility(View.VISIBLE);
                 textView2.setText(vin.getNom() + " (" + vin.getVigneron() + ")");
                 textView3.setText(vin.getPrixToString() + " €");
-                Log.e("DEBUG", "On est la");
+                Log.e("DEBUG", "On est la Bordeaux");
                 try {
                     textView4.setText(vin.getMillesimeToString());
                 } catch (Exception unused) {

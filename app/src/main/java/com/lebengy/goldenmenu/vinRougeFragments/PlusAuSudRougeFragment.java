@@ -209,15 +209,15 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
         Iterator it = arrayList4.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList5.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         int i = 1;
         for (Integer num : this.hashMap1.keySet()) {
@@ -310,15 +310,15 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S2mill15));
         Iterator it = arrayList4.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList5.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         int i = 1;
         for (Integer num : this.hashMap2.keySet()) {
@@ -393,15 +393,15 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.s3mill10));
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList2.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         int i = 1;
         for (Integer num : this.hashMap3.keySet()) {

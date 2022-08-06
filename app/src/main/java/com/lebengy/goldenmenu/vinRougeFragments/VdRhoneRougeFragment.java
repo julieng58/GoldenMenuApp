@@ -234,27 +234,27 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList6.add((TextView) v.findViewById(R.id.S2mill15));
         Iterator it = arrayList7.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList10.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList8.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         Iterator it4 = arrayList11.iterator();
         while (it4.hasNext()) {
-            ((TextView) it4.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it4.next()).setVisibility(View.GONE);
         }
         Iterator it5 = arrayList9.iterator();
         while (it5.hasNext()) {
-            ((TextView) it5.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it5.next()).setVisibility(View.GONE);
         }
         Iterator it6 = arrayList6.iterator();
         while (it6.hasNext()) {
-            ((TextView) it6.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it6.next()).setVisibility(View.GONE);
         }
         Collections.sort(this.listPays);
         Iterator<Integer> it7 = this.hashMapVins.keySet().iterator();
@@ -372,15 +372,15 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.s3mill10));
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList2.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         Collections.sort(this.listSavoie);
         int i = 0;

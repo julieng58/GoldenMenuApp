@@ -58,8 +58,7 @@ public class VinDePaysRougeFragment extends Fragment {
 
     public void fetchVins(final View v) {
         CollectionReference collection = this.db.collection("Vin");
-        Integer valueOf = Integer.valueOf((int) 2);
-        collection.whereEqualTo("type", valueOf).whereEqualTo("appellation", valueOf).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.VinDePaysRougeFragment.1
+        collection.whereEqualTo("type", 2).whereEqualTo("appellation", 2).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.VinDePaysRougeFragment.1
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -107,104 +106,98 @@ public class VinDePaysRougeFragment extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoVins(View v) {
-        ArrayList arrayList = new ArrayList();
-        ArrayList arrayList2 = new ArrayList();
-        ArrayList arrayList3 = new ArrayList();
-        TextView textView = (TextView) v.findViewById(R.id.S1label14);
-        arrayList.add((TextView) v.findViewById(R.id.S1label1));
-        arrayList.add((TextView) v.findViewById(R.id.S1label2));
-        arrayList.add((TextView) v.findViewById(R.id.S1label3));
-        arrayList.add((TextView) v.findViewById(R.id.S1label4));
-        arrayList.add((TextView) v.findViewById(R.id.S1label5));
-        arrayList.add((TextView) v.findViewById(R.id.S1label6));
-        arrayList.add((TextView) v.findViewById(R.id.S1label7));
-        arrayList.add((TextView) v.findViewById(R.id.S1label8));
-        arrayList.add((TextView) v.findViewById(R.id.S1label9));
-        arrayList.add((TextView) v.findViewById(R.id.S1label10));
-        arrayList.add((TextView) v.findViewById(R.id.S1label11));
-        arrayList.add((TextView) v.findViewById(R.id.S1label12));
-        arrayList.add((TextView) v.findViewById(R.id.S1label13));
-        arrayList.add(textView);
-        arrayList.add((TextView) v.findViewById(R.id.S1label15));
-        ArrayList arrayList4 = arrayList;
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix1));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix2));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix3));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix4));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix5));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix6));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix7));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix8));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix9));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix10));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix11));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix12));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix13));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix14));
-        arrayList2.add((TextView) v.findViewById(R.id.S1prix15));
-        ArrayList arrayList5 = arrayList2;
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill1));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill2));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill3));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill4));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill5));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill6));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill7));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill8));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill9));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill10));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill11));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill12));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill13));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill14));
-        arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
-        Iterator it = arrayList4.iterator();
-        Log.e("Errror", Integer.toString(arrayList4.size()));
-        while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
-        }
-        Iterator it2 = arrayList5.iterator();
-        while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
-        }
-        Iterator it3 = arrayList3.iterator();
-        while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
-        }
-        int i = 0;
-        for (Integer num : this.hashMapBourgogne.keySet()) {
-            ArrayList<Vin> arrayList6 = this.hashMapBourgogne.get(Integer.valueOf(num.intValue()));
-            Collections.sort(arrayList6);
-            int i2 = 0;
-            while (i2 < arrayList6.size() && i < 15 && i2 < 15) {
-                Vin vin = arrayList6.get(i2);
-                ArrayList arrayList7 = arrayList4;
-                TextView textView2 = (TextView) arrayList7.get(i);
-                ArrayList arrayList8 = arrayList5;
-                TextView textView3 = (TextView) arrayList8.get(i);
-                TextView textView4 = (TextView) arrayList3.get(i);
-                textView2.setVisibility(View.VISIBLE);
-                textView3.setVisibility(View.VISIBLE);
-                textView4.setVisibility(View.VISIBLE);
-                textView2.setText(vin.getNom() + " (" + vin.getVigneron() + ")");
-                textView3.setText(vin.getPrixToString() + " €");
-                try {
-                    textView4.setText(vin.getMillesimeToString());
-                } catch (Exception unused) {
-                }
-                if (!vin.isDispo()) {
-                    crossout(textView2, textView4, textView3);
-                } else {
-                    uncrossout(textView2, textView4, textView3);
-                }
-                i += 1;
-                i2 += 1;
-                arrayList4 = arrayList7;
-                arrayList5 = arrayList8;
+            ArrayList arrayList = new ArrayList();
+            ArrayList arrayList2 = new ArrayList();
+            ArrayList arrayList3 = new ArrayList();
+
+            arrayList.add((TextView) v.findViewById(R.id.S1label1));
+            arrayList.add((TextView) v.findViewById(R.id.S1label2));
+            arrayList.add((TextView) v.findViewById(R.id.S1label3));
+            arrayList.add((TextView) v.findViewById(R.id.S1label4));
+            arrayList.add((TextView) v.findViewById(R.id.S1label5));
+            arrayList.add((TextView) v.findViewById(R.id.S1label6));
+            arrayList.add((TextView) v.findViewById(R.id.S1label7));
+            arrayList.add((TextView) v.findViewById(R.id.S1label8));
+            arrayList.add((TextView) v.findViewById(R.id.S1label9));
+            arrayList.add((TextView) v.findViewById(R.id.S1label10));
+            arrayList.add((TextView) v.findViewById(R.id.S1label11));
+            arrayList.add((TextView) v.findViewById(R.id.S1label12));
+            arrayList.add((TextView) v.findViewById(R.id.S1label13));
+            arrayList.add((TextView) v.findViewById(R.id.S1label14));
+            arrayList.add((TextView) v.findViewById(R.id.S1label15));
+
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix1));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix2));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix3));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix4));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix5));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix6));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix7));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix8));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix9));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix10));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix11));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix12));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix13));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix14));
+            arrayList2.add((TextView) v.findViewById(R.id.S1prix15));
+
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill1));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill2));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill3));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill4));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill5));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill6));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill7));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill8));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill9));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill10));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill11));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill12));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill13));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill14));
+            arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
+
+            Iterator it = arrayList.iterator();
+            while (it.hasNext() & it.next() != null) {
+                ((TextView) it.next()).setVisibility(View.GONE);
             }
-            arrayList4 = arrayList4;
-            arrayList5 = arrayList5;
-        }
+            Iterator it2 = arrayList2.iterator();
+            while (it2.hasNext()) {
+                ((TextView) it2.next()).setVisibility(View.GONE);
+            }
+            Iterator it3 = arrayList3.iterator();
+            while (it3.hasNext()) {
+                ((TextView) it3.next()).setVisibility(View.GONE);
+            }
+            int i = 0;
+            for (Integer num : this.hashMapBourgogne.keySet()) {
+                ArrayList<Vin> arrayList6 = this.hashMapBourgogne.get(Integer.valueOf(num.intValue()));
+                Collections.sort(arrayList6);
+                int i2 = 0;
+                while (i2 < arrayList6.size() && i < 15 && i2 < 15) {
+                    Vin vin = arrayList6.get(i2);
+                    TextView textView2 = (TextView) arrayList.get(i);
+                    TextView textView3 = (TextView) arrayList2.get(i);
+                    TextView textView4 = (TextView) arrayList3.get(i);
+                    textView2.setVisibility(View.VISIBLE);
+                    textView3.setVisibility(View.VISIBLE);
+                    textView4.setVisibility(View.VISIBLE);
+                    textView2.setText(vin.getNom() + " (" + vin.getVigneron() + ")");
+                    textView3.setText(vin.getPrixToString() + " €");
+                    try {
+                        textView4.setText(vin.getMillesimeToString());
+                    } catch (Exception unused) {
+                    }
+                    if (!vin.isDispo()) {
+                        crossout(textView2, textView4, textView3);
+                    } else {
+                        uncrossout(textView2, textView4, textView3);
+                    }
+                    i += 1;
+                    i2 += 1;
+                }
+            }
     }
 
     private void crossout(TextView nom, TextView prix, TextView mill) {

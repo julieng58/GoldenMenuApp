@@ -252,43 +252,43 @@ public class LoireRougeFragment extends Fragment {
         arrayList10.add((TextView) v.findViewById(R.id.headerPrix3));
         Iterator it = arrayList11.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList14.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList7.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         Iterator it4 = arrayList12.iterator();
         while (it4.hasNext()) {
-            ((TextView) it4.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it4.next()).setVisibility(View.GONE);
         }
         Iterator it5 = arrayList15.iterator();
         while (it5.hasNext()) {
-            ((TextView) it5.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it5.next()).setVisibility(View.GONE);
         }
         Iterator it6 = arrayList8.iterator();
         while (it6.hasNext()) {
-            ((TextView) it6.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it6.next()).setVisibility(View.GONE);
         }
         Iterator it7 = arrayList13.iterator();
         while (it7.hasNext()) {
-            ((TextView) it7.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it7.next()).setVisibility(View.GONE);
         }
         Iterator it8 = arrayList16.iterator();
         while (it8.hasNext()) {
-            ((TextView) it8.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it8.next()).setVisibility(View.GONE);
         }
         Iterator it9 = arrayList9.iterator();
         while (it9.hasNext()) {
-            ((TextView) it9.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it9.next()).setVisibility(View.GONE);
         }
         Iterator it10 = arrayList10.iterator();
         while (it10.hasNext()) {
-            ((TextView) it10.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it10.next()).setVisibility(View.GONE);
         }
         Collections.sort(this.listSanc);
         int i2 = 0;

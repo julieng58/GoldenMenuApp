@@ -14,14 +14,10 @@
         android:theme="@style/Theme.GoldenMenu"
         tools:targetApi="31">
         <activity
-            android:name=".TEst"
-            android:exported="false"
-            android:label="@string/title_activity_test"
-            android:theme="@style/Theme.GoldenMenu.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoldenMenu.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,7 +30,8 @@
             android:name=".CarteVinsActivity"
             android:label="Les Rouges"
             android:parentActivityName=".AccueilVins"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoldenMenu.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lebengy.goldenmenu.AccueilVins" />
@@ -42,11 +39,28 @@
         <activity
             android:name=".AccueilVins"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GoldenMenu.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lebengy.goldenmenu.MainActivity" />
         </activity>
+        <activity android:label="Les Rosés" android:name="com.lebengy.goldenmenu.soloPageVin.RoseActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        </activity>
+        <activity android:label="@string/title_activity_rose" android:name="com.lebengy.goldenmenu.soloPageVin.MagnumActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        </activity>
+        <activity android:label="@string/title_activity_rose" android:name="com.lebengy.goldenmenu.soloPageVin.BiereActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        </activity>
+        <activity android:label="@string/title_activity_rose" android:name="com.lebengy.goldenmenu.soloPageVin.ChampagneActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        </activity>
+        <activity android:label="@string/title_activity_rose" android:name="com.lebengy.goldenmenu.soloPageVin.VinAuVerreActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

@@ -151,15 +151,15 @@ public class BeaujolaisRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
         Iterator it = arrayList4.iterator();
         while (it.hasNext()) {
-            ((TextView) it.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it.next()).setVisibility(View.GONE);
         }
         Iterator it2 = arrayList5.iterator();
         while (it2.hasNext()) {
-            ((TextView) it2.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it2.next()).setVisibility(View.GONE);
         }
         Iterator it3 = arrayList3.iterator();
         while (it3.hasNext()) {
-            ((TextView) it3.next()).setVisibility(View.INVISIBLE);
+            ((TextView) it3.next()).setVisibility(View.GONE);
         }
         int i = 0;
         for (Integer num : this.hashMapVins.keySet()) {
