@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoInfo() {
-        //this.fadingTextView.setTexts((String[]) this.listInfoList.toArray(new String[R.styleable.ActionBar]));
+        //this.fadingTextView.setTexts((String[]) this.listInfoList.toArray(new String[0]));
     }
 
     public void clickOnVins(View view) {
@@ -62,6 +62,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickOnMenus(View view) {
-        //startActivity(new Intent(this, LesMenus.class));
+        startActivity(new Intent(this, LesMenus.class));
     }
 }

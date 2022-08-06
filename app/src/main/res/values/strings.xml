@@ -39,6 +39,17 @@
     <string name="tab_text_aperitifs">Apéritifs</string>
     <string name="tab_text_digestifs">Digestifs</string>
     <string name="tab_text_etAussi">Et aussi...</string>
+    <string name="tab_text_vinB1">Loire</string>
+    <string name="tab_text_vinB2">Bourgogne</string>
+    <string name="tab_text_vinB3">Vallée du Rhône</string>
+    <string name="tab_text_vinB4">Alsace</string>
+    <string name="tab_text_vinB5">Plus au sud</string>
+    <string name="tab_text_vinB6">Vin de pays</string>
+    <string name="tab_text_vinD1">Loire</string>
+    <string name="tab_text_vinD2">Bourgogne</string>
+    <string name="tab_text_vinD3">Beaujolais</string>
+    <string name="tab_text_vinD4">Bordeaux</string>
+    <string name="tab_text_vinD5">Vallée du Rhône</string>
     <string name="tab_text_vinR1">Loire</string>
     <string name="tab_text_vinR2">Bourgogne</string>
     <string name="tab_text_vinR3">Beaujolais</string>

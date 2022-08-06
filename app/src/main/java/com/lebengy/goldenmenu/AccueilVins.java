@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
-//import com.lebengy.goldenmenu.barTab.BarActivity;
-//import com.lebengy.goldenmenu.demibouteillesTab.DemiBouteillesActivity;
-//import com.lebengy.goldenmenu.soloPageVin.BiereActivity;
-//import com.lebengy.goldenmenu.soloPageVin.ChampagneActivity;
-//import com.lebengy.goldenmenu.soloPageVin.MagnumActivity;
-//import com.lebengy.goldenmenu.soloPageVin.RoseActivity;
-//import com.lebengy.goldenmenu.soloPageVin.VinAuVerreActivity;
-//import com.lebengy.goldenmenu.vinsBlancTab.VinBlancActivity;
+import com.lebengy.goldenmenu.barTab.BarActivity;
+import com.lebengy.goldenmenu.demibouteillesTab.DemiBouteillesActivity;
+import com.lebengy.goldenmenu.soloPageVin.BiereActivity;
+import com.lebengy.goldenmenu.soloPageVin.ChampagneActivity;
+import com.lebengy.goldenmenu.soloPageVin.MagnumActivity;
+import com.lebengy.goldenmenu.soloPageVin.RoseActivity;
+import com.lebengy.goldenmenu.soloPageVin.VinAuVerreActivity;
+import com.lebengy.goldenmenu.vinsBlancTab.VinBlancActivity;
 
 /* loaded from: base/dex/classes2.dex */
 public class AccueilVins extends AppCompatActivity {
@@ -38,34 +38,34 @@ public class AccueilVins extends AppCompatActivity {
     }
 
     public void clickOnBar(View view) {
-        //startActivity(new Intent(this, BarActivity.class));
+        startActivity(new Intent(this, BarActivity.class));
     }
 
     public void clickOnMagnum(View view) {
-        //startActivity(new Intent(this, MagnumActivity.class));
+        startActivity(new Intent(this, MagnumActivity.class));
     }
 
     public void clickOnDemi(View view) {
-        //startActivity(new Intent(this, DemiBouteillesActivity.class));
+        startActivity(new Intent(this, DemiBouteillesActivity.class));
     }
 
     public void clickOnRose(View view) {
-        //startActivity(new Intent(this, RoseActivity.class));
+        startActivity(new Intent(this, RoseActivity.class));
     }
 
     public void clickOnBiere(View view) {
-        //startActivity(new Intent(this, BiereActivity.class));
+        startActivity(new Intent(this, BiereActivity.class));
     }
 
     public void clickOnChampagne(View view) {
-        //startActivity(new Intent(this, ChampagneActivity.class));
+        startActivity(new Intent(this, ChampagneActivity.class));
     }
 
     public void clickOnVinVerre(View view) {
-        //startActivity(new Intent(this, VinAuVerreActivity.class));
+        startActivity(new Intent(this, VinAuVerreActivity.class));
     }
 
     public void clickOnBlanc(View view) {
-        //startActivity(new Intent(this, VinBlancActivity.class));
+        startActivity(new Intent(this, VinBlancActivity.class));
     }
 }
