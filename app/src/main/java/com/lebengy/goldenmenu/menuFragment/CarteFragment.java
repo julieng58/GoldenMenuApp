@@ -91,9 +91,10 @@ public class CarteFragment extends Fragment {
                 while (it.hasNext()) {
                     CarteFragment.this.listPlat.add(CarteFragment.this.unserializePlat(it.next()));
                 }
+                CarteFragment.this.dispoPlat(v);
             }
         });
-        this.db.collection("Formule").whereEqualTo("aLaCarte", (Object) true).addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.menuFragment.CarteFragment.3
+/*        this.db.collection("Formule").whereEqualTo("aLaCarte", (Object) true).addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.menuFragment.CarteFragment.3
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -104,9 +105,9 @@ public class CarteFragment extends Fragment {
                 while (it.hasNext()) {
                     CarteFragment.this.listPlat.add(CarteFragment.this.convertToPlat(it.next()));
                 }
-                CarteFragment.this.dispoPlat(v);
+
             }
-        });
+        });*/
         this.db.collection("Dessert").whereGreaterThanOrEqualTo("aLaCarte", valueOf).addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.menuFragment.CarteFragment.4
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
@@ -187,6 +188,7 @@ public class CarteFragment extends Fragment {
         TextView textView32 = (TextView) v.findViewById(R.id.prixE9);
         textView32.setVisibility(View.GONE);
         Collections.sort(this.listEntree);
+        Log.e("DEBUG", "Taille entrée : " + this.listEntree.size());
         while (i < this.listEntree.size() && i < 8) {
             Plat plat = this.listEntree.get(i);
             switch (i) {
@@ -362,9 +364,9 @@ public class CarteFragment extends Fragment {
         TextView textView57 = (TextView) v.findViewById(R.id.prixP13);
         textView57.setVisibility(View.GONE);
         Collections.sort(this.listPlat);
+        Log.e("DEBUG", "Taille plat : " + this.listPlat.size());
         while (i < this.listPlat.size() && i < 12) {
             Plat plat = this.listPlat.get(i);
-
             switch (i) {
                 case 0:
                     textView20.setVisibility(View.VISIBLE);
@@ -405,7 +407,6 @@ public class CarteFragment extends Fragment {
                     i++;
                     break;
                 case 3:
-
                     textView23.setVisibility(View.VISIBLE);
                     textView39.setVisibility(View.VISIBLE);
                     textView23.setText(plat.getNom());
@@ -418,7 +419,6 @@ public class CarteFragment extends Fragment {
                     i++;
                     break;
                 case 4:
-
                     textView24.setVisibility(View.VISIBLE);
                     textView41.setVisibility(View.VISIBLE);
                     textView24.setText(plat.getNom());
@@ -431,7 +431,6 @@ public class CarteFragment extends Fragment {
                     i++;
                     break;
                 case 5:
-
                     textView25.setVisibility(View.VISIBLE);
                     textView43.setVisibility(View.VISIBLE);
                     textView25.setText(plat.getNom());
@@ -444,7 +443,6 @@ public class CarteFragment extends Fragment {
                     i++;
                     break;
                 case 6:
-
                     textView26.setVisibility(View.VISIBLE);
                     textView45.setVisibility(View.VISIBLE);
                     textView26.setText(plat.getNom());
@@ -537,7 +535,6 @@ public class CarteFragment extends Fragment {
                 default:
                     return;
             }
-            i++;
         }
     }
 
@@ -574,9 +571,9 @@ public class CarteFragment extends Fragment {
         TextView textView20 = (TextView) v.findViewById(R.id.prixD7);
         textView20.setVisibility(View.GONE);
         Collections.sort(this.listDessert);
+        Log.e("DEBUG", "Taille dessert : " + this.listDessert.size());
         while (i < this.listDessert.size() && i < 6) {
             Plat plat = this.listDessert.get(i);
-            TextView textView22 = textView7;
             switch (i) {
                 case 0:
                     textView7.setVisibility(View.VISIBLE);
@@ -665,7 +662,6 @@ public class CarteFragment extends Fragment {
                 default:
                     return;
             }
-            i++;
         }
     }
 

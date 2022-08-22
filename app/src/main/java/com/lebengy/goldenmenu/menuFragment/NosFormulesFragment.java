@@ -57,7 +57,7 @@ public class NosFormulesFragment extends Fragment {
     }
 
     public void fetchFormule(final View v) {
-        this.db.collection("Formule").whereEqualTo("aLaCarte", (Object) true).addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.menuFragment.NosFormulesFragment.1
+        /*this.db.collection("Formule").whereEqualTo("aLaCarte", (Object) true).addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.menuFragment.NosFormulesFragment.1
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -71,7 +71,7 @@ public class NosFormulesFragment extends Fragment {
                 }
                 NosFormulesFragment.this.dispoFormule(v);
             }
-        });
+        });*/
     }
 
     /* JADX INFO: Access modifiers changed from: private */

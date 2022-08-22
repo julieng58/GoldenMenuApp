@@ -25,7 +25,7 @@ public class AccueilVins extends AppCompatActivity {
         ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButtonBlanc);
         ImageButton imageButton3 = (ImageButton) findViewById(R.id.imageButtonRose);
         ImageButton imageButton4 = (ImageButton) findViewById(R.id.imageButtonVerre);
-        ImageButton imageButton5 = (ImageButton) findViewById(R.id.imageButtonDemi);
+        //ImageButton imageButton5 = (ImageButton) findViewById(R.id.imageButtonDemi);
         ImageButton imageButton6 = (ImageButton) findViewById(R.id.imageButtonMagnum);
         ImageButton imageButton7 = (ImageButton) findViewById(R.id.imageButtonChampagne);
         ImageButton imageButton8 = (ImageButton) findViewById(R.id.imageButtonBiere);
@@ -46,7 +46,7 @@ public class AccueilVins extends AppCompatActivity {
     }
 
     public void clickOnDemi(View view) {
-        startActivity(new Intent(this, DemiBouteillesActivity.class));
+        //startActivity(new Intent(this, DemiBouteillesActivity.class));
     }
 
     public void clickOnRose(View view) {

@@ -21,7 +21,7 @@ import com.lebengy.goldenmenu.vinBlancFragments.VinDePaysBlancFragment;
 
 /* loaded from: base/dex/classes2.dex */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-    private static final int[] TAB_TITLES= new int[]{R.string.tab_text_5,R.string.tab_text_1,R.string.tab_text_2,R.string.tab_text_3,R.string.tab_text_4};
+    private static final int[] TAB_TITLES= new int[]{R.string.tab_text_5,R.string.tab_text_2,R.string.tab_text_3,R.string.tab_text_1,R.string.tab_text_4};
     private final Context mContext;
 
     @Override // androidx.viewpager.widget.PagerAdapter
@@ -37,16 +37,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override // androidx.fragment.app.FragmentPagerAdapter
     public Fragment getItem(int position) {
         if (position != 0) {
-            if (position == 2) {
+            if (position == 1) {
                 return Menu25Fragment.newInstance("", "");
             }
-            if (position == 3) {
+            if (position == 2) {
                 return Menu32Fragment.newInstance("", "");
             }
             if (position == 4) {
                 return CarteFragment.newInstance("", "");
             }
-            if (position == 1) {
+            if (position == 3) {
                 return NosFormulesFragment.newInstance("", "");
             }
             return PlaceholderFragment.newInstance(position + 1);

@@ -16,7 +16,20 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="90dp" android:layout_height="wrap_content" android:onClick="clickOnBar" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="150dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" app:srcCompat="@drawable/ic_alcool" android:id="@+id/imageButtonBar"/>
-    <ImageButton android:layout_marginEnd="32dp" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="clickOnBiere" app:layout_constraintEnd_toStartOf="@+id/imageButtonBar" app:layout_constraintStart_toEndOf="@+id/imageButtonChampagne" app:layout_constraintBottom_toBottomOf="@+id/imageButtonBar" android:layout_marginStart="32dp" app:srcCompat="@drawable/ic_biere" android:id="@+id/imageButtonBiere"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonBiere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnBiere"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBar"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonBar"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonChampagne"
+        app:srcCompat="@drawable/ic_biere" />
 
     <ImageButton
         android:id="@+id/imageButtonBlanc"
@@ -30,7 +43,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButtonRouge"
         app:srcCompat="@drawable/ic_bouteilleblanc" />
-    <ImageButton android:background="#00FFFFFF" android:layout_width="87dp" android:layout_height="wrap_content" android:onClick="clickOnChampagne" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="@+id/imageButtonBiere" android:layout_marginStart="140dp" app:srcCompat="@drawable/ic_bouteillechampagne" android:id="@+id/imageButtonChampagne"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonChampagne"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnBiere"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBiere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_biere" />
 
     <ImageButton
         android:id="@+id/imageButtonRose"
@@ -65,13 +88,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="#00FFFFFF"
-        android:onClick="clickOnDemi"
+        android:onClick="clickOnChampagne"
         android:scaleType="fitCenter"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonMagnum"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonMagnum"
         app:layout_constraintStart_toEndOf="@+id/imageButtonVerre"
-        app:srcCompat="@drawable/ic_demi"
-        tools:visibility="gone" />
+        app:srcCompat="@drawable/ic_bouteillechampagne"
+        tools:visibility="visible" />
     <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="clickOnMagnum" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" app:srcCompat="@drawable/ic_magnum" android:id="@+id/imageButtonMagnum"/>
     <ImageButton android:scaleType="fitCenter" android:background="#00FFFFFF" android:layout_width="72dp" android:layout_height="128dp" android:onClick="clickOnVinVerre" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="@+id/imageButtonDemi" android:layout_marginStart="140dp" app:srcCompat="@drawable/ic_verrerouge" android:id="@+id/imageButtonVerre"/>
     <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBlanc" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBlanc" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBlanc" android:id="@+id/textView4" android:text="Nos blancs"/>
@@ -85,16 +109,46 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/josefin_sansold"
-        android:text="Nos demies\nbouteilles"
+        android:onClick="clickOnChampagne"
+        android:text="Nos champagnes"
         android:textAlignment="center"
         android:textColor="@color/colorTextAccueil"
         android:textSize="24sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/imageButtonDemi"
         app:layout_constraintStart_toStartOf="@+id/imageButtonDemi"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonDemi"
-        tools:visibility="gone" />
+        tools:visibility="visible" />
     <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonVerre" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonVerre" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonVerre" android:id="@+id/textView17" android:text="Nos verres"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonChampagne" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonChampagne" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonChampagne" android:id="@+id/textView15" android:text="Nos champagnes"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBiere" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBiere" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" android:id="@+id/textView16" android:text="Nos bières"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:onClick="clickOnBiere"
+        android:text="Nos bières"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonChampagne"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonChampagne"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonChampagne" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Nos bières"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBiere"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBiere"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" />
     <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBar" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBar" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBar" android:id="@+id/textView14" android:text="Notre bar\nNos sans alcools"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
