@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.lebengy.goldenmenu">
+    package="com.saslebengy.goldenmenu">
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.GoldenMenu"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.saslebengy.goldenmenu.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GoldenMenu.NoActionBar" >
@@ -27,51 +27,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CarteVinsActivity"
+            android:name="com.saslebengy.goldenmenu.CarteVinsActivity"
             android:label="Les Rouges"
-            android:parentActivityName=".AccueilVins"
+            android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GoldenMenu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lebengy.goldenmenu.AccueilVins" />
+                android:value="com.saslebengy.goldenmenu.AccueilVins" />
         </activity>
         <activity
-            android:name=".AccueilVins"
+            android:name="com.saslebengy.goldenmenu.AccueilVins"
             android:label="Carte des vins"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.saslebengy.goldenmenu.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GoldenMenu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lebengy.goldenmenu.MainActivity" />
+                android:value="com.saslebengy.goldenmenu.MainActivity" />
         </activity>
-        <activity android:label="@string/title_activity_les_menus" android:name="com.lebengy.goldenmenu.LesMenus" android:parentActivityName="com.lebengy.goldenmenu.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.GoldenMenu">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.MainActivity"/>
+        <activity android:label="@string/title_activity_les_menus" android:name="com.saslebengy.goldenmenu.LesMenus" android:parentActivityName="com.saslebengy.goldenmenu.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.GoldenMenu">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.MainActivity"/>
         </activity>
-        <activity android:label="Les Blancs" android:name="com.lebengy.goldenmenu.vinsBlancTab.VinBlancActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Les Blancs" android:name="com.saslebengy.goldenmenu.vinsBlancTab.VinBlancActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Les Rosés" android:name="com.lebengy.goldenmenu.soloPageVin.RoseActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Les Rosés" android:name="com.saslebengy.goldenmenu.soloPageVin.RoseActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Nos Magnums" android:name="com.lebengy.goldenmenu.soloPageVin.MagnumActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Nos Magnums" android:name="com.saslebengy.goldenmenu.soloPageVin.MagnumActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Nos Bières" android:name="com.lebengy.goldenmenu.soloPageVin.BiereActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Nos Bières" android:name="com.saslebengy.goldenmenu.soloPageVin.BiereActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Nos Champagnes" android:name="com.lebengy.goldenmenu.soloPageVin.ChampagneActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Nos Champagnes" android:name="com.saslebengy.goldenmenu.soloPageVin.ChampagneActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Nos vins au verre" android:name="com.lebengy.goldenmenu.soloPageVin.VinAuVerreActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Nos vins au verre" android:name="com.saslebengy.goldenmenu.soloPageVin.VinAuVerreActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Les demies bouteilles" android:name="com.lebengy.goldenmenu.demibouteillesTab.DemiBouteillesActivity" android:parentActivityName="com.lebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Les demies bouteilles" android:name="com.saslebengy.goldenmenu.demibouteillesTab.DemiBouteillesActivity" android:parentActivityName="com.saslebengy.goldenmenu.AccueilVins" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
-        <activity android:label="Le bar" android:name="com.lebengy.goldenmenu.barTab.BarActivity" android:screenOrientation="portrait">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lebengy.goldenmenu.AccueilVins"/>
+        <activity android:label="Le bar" android:name="com.saslebengy.goldenmenu.barTab.BarActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.saslebengy.goldenmenu.AccueilVins"/>
         </activity>
 
 

@@ -34,6 +34,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804536175480:android:12a99bc046e2e1e901168d",
+        "android_client_info": {
+          "package_name": "com.saslebengy.goldenmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804536175480-tca12csk5load9lchsbdknqrnlncl6js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ8ddJMEjp55GAm02ExgZ2q1OOulquyio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804536175480-tca12csk5load9lchsbdknqrnlncl6js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

@@ -8,11 +8,11 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.lebengy.goldenmenu"
+        applicationId "com.saslebengy.goldenmenu"
         minSdk 26
         targetSdk 32
-        versionCode 18
-        versionName "GoldenReborn"
+        versionCode 2
+        versionName "GoldenAwaking"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
