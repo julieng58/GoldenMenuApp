@@ -52,7 +52,7 @@ public class Plat implements Comparable {
         }
         if (isVegan()) {
             String str2 = str + " " + getEmojiByUnicode(127793);
-            Log.e("DEBUG", "Vegan");
+            Log.e("DEBUG", "Vegan : " + this.nom + " dans le menu : " + Integer.toString(this.aLaCarte));
             return str2;
         }
         return str;

@@ -7,9 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>-->
     <color name="white">#FFFFFFFF</color>
-    <color name="colorAccent">#ffffc107</color>
-    <color name="colorPrimary">#ff795548</color>
-    <color name="colorPrimaryDark">#ff4b2c20</color>
+    <color name="colorAccentOld">#ffffc107</color>
+    <color name="colorPrimaryOld">#ff795548</color>
+    <color name="colorPrimaryDarkOld">#ff4b2c20</color>
+    <color name="colorTextAccueilOld">#5C443A</color>
+    <color name="colorAccent">#C70039</color>
+    <color name="colorPrimary">#C70039</color>
+    <color name="colorPrimaryDark">#810327</color>
+    <color name="colorTextAccueil">#C70039</color>
+
 
 <color name="abc_input_method_navigation_guard">@android:color/black</color>
 <color name="abc_search_url_text_normal">#ff7fa87f</color>

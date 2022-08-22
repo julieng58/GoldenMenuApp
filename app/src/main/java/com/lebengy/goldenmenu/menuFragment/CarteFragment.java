@@ -148,17 +148,8 @@ public class CarteFragment extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoEntree(View v) {
-        TextView textView;
-        int i;
-        TextView textView2;
-        TextView textView3;
-        TextView textView4;
-        TextView textView5;
-        TextView textView6;
-        TextView textView7;
-        TextView textView8;
-        TextView textView9;
-        TextView textView10;
+        Log.e("DEBUG", "Dispo entrée");
+        int i = 0;
         TextView textView11 = (TextView) v.findViewById(R.id.entree1);
         textView11.setVisibility(View.GONE);
         TextView textView12 = (TextView) v.findViewById(R.id.entree2);
@@ -186,144 +177,69 @@ public class CarteFragment extends Fragment {
         TextView textView23 = (TextView) v.findViewById(R.id.prixE4);
         textView23.setVisibility(View.GONE);
         TextView textView24 = (TextView) v.findViewById(R.id.prixE5);
-        TextView textView25 = textView20;
         textView24.setVisibility(View.GONE);
         TextView textView26 = (TextView) v.findViewById(R.id.prixE6);
-        TextView textView27 = textView11;
         textView26.setVisibility(View.GONE);
         TextView textView28 = (TextView) v.findViewById(R.id.prixE7);
-        TextView textView29 = textView21;
         textView28.setVisibility(View.GONE);
         TextView textView30 = (TextView) v.findViewById(R.id.prixE8);
-        TextView textView31 = textView12;
         textView30.setVisibility(View.GONE);
         TextView textView32 = (TextView) v.findViewById(R.id.prixE9);
         textView32.setVisibility(View.GONE);
         Collections.sort(this.listEntree);
-        TextView textView33 = textView22;
-        int i2 = 0;
-        while (i2 < this.listEntree.size() && i2 < 9) {
-            Plat plat = this.listEntree.get(i2);
-            TextView textView34 = textView13;
-            switch (i2) {
+        while (i < this.listEntree.size() && i < 8) {
+            Plat plat = this.listEntree.get(i);
+            switch (i) {
                 case 0:
-                    textView = textView32;
-                    i = i2;
-                    TextView textView35 = textView29;
-                    TextView textView36 = textView31;
-                    textView2 = textView34;
-                    textView3 = textView28;
-                    textView4 = textView33;
-                    textView5 = textView27;
-                    textView6 = textView24;
-                    textView5.setVisibility(View.VISIBLE);
-                    textView7 = textView35;
-                    textView8 = textView25;
-                    textView8.setVisibility(View.VISIBLE);
-                    textView5.setText(plat.getNom());
-                    textView9 = textView36;
-                    textView8.setText(plat.getPrixCarteString() + " euros");
+                    textView11.setVisibility(View.VISIBLE);
+                    textView20.setVisibility(View.VISIBLE);
+                    textView11.setText(plat.getNom());
+                    textView20.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView5, textView8);
+                        crossout(textView11, textView20);
                     } else {
-                        uncrossout(textView5, textView8);
-                        continue;
+                        uncrossout(textView11, textView20);
                     }
-                    i2 = i + 1;
-                    textView24 = textView6;
-                    textView33 = textView4;
-                    textView13 = textView2;
-                    textView31 = textView9;
-                    textView29 = textView7;
-                    textView25 = textView8;
-                    textView27 = textView5;
-                    textView28 = textView3;
-                    textView32 = textView;
+                    i++;
+                    break;
                 case 1:
-                    textView = textView32;
-                    i = i2;
-                    TextView textView37 = textView31;
-                    textView3 = textView28;
-                    TextView textView38 = textView33;
-                    textView6 = textView24;
-                    textView37.setVisibility(View.VISIBLE);
-                    textView2 = textView34;
-                    TextView textView39 = textView29;
-                    textView39.setVisibility(View.VISIBLE);
-                    textView37.setText(plat.getNom());
-                    textView4 = textView38;
-                    textView39.setText(plat.getPrixCarteString() + " euros");
+                    textView12.setVisibility(View.VISIBLE);
+                    textView21.setVisibility(View.VISIBLE);
+                    textView12.setText(plat.getNom());
+                    textView21.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView37, textView39);
+                        crossout(textView12, textView21);
                     } else {
-                        uncrossout(textView37, textView39);
+                        uncrossout(textView12, textView21);
                     }
-                    textView5 = textView27;
-                    textView7 = textView39;
-                    textView8 = textView25;
-                    textView9 = textView37;
-                    //continue;
-                    i2 = i + 1;
-                    textView24 = textView6;
-                    textView33 = textView4;
-                    textView13 = textView2;
-                    textView31 = textView9;
-                    textView29 = textView7;
-                    textView25 = textView8;
-                    textView27 = textView5;
-                    textView28 = textView3;
-                    textView32 = textView;
+                    i++;
+                    break;
                 case 2:
-                    textView = textView32;
-                    i = i2;
-                    textView34.setVisibility(View.VISIBLE);
-                    textView3 = textView28;
-                    TextView textView40 = textView33;
-                    textView40.setVisibility(View.VISIBLE);
-                    textView34.setText(plat.getNom());
-                    textView6 = textView24;
-                    textView40.setText(plat.getPrixCarteString() + " euros");
+                    textView13.setVisibility(View.VISIBLE);
+                    textView22.setVisibility(View.VISIBLE);
+                    textView13.setText(plat.getNom());
+                    textView22.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView34, textView40);
+                        crossout(textView13, textView22);
                     } else {
-                        uncrossout(textView34, textView40);
+                        uncrossout(textView13, textView22);
                     }
-                    TextView textView41 = textView31;
-                    textView2 = textView34;
-                    textView8 = textView25;
-                    textView9 = textView41;
-                    TextView textView42 = textView29;
-                    textView4 = textView40;
-                    textView5 = textView27;
-                    textView7 = textView42;
-                    //continue;
-                    i2 = i + 1;
-                    textView24 = textView6;
-                    textView33 = textView4;
-                    textView13 = textView2;
-                    textView31 = textView9;
-                    textView29 = textView7;
-                    textView25 = textView8;
-                    textView27 = textView5;
-                    textView28 = textView3;
-                    textView32 = textView;
+                    i++;
+                    break;
                 case 3:
-                    i = i2;
                     textView14.setVisibility(View.VISIBLE);
                     textView23.setVisibility(View.VISIBLE);
                     textView14.setText(plat.getNom());
-                    textView = textView32;
                     textView23.setText(plat.getPrixCarteString() + " euros");
                     if (plat.isDispo()) {
                         uncrossout(textView14, textView23);
-                        break;
                     } else {
                         crossout(textView14, textView23);
-                        break;
+
                     }
+                    i++;
+                    break;
                 case 4:
-                    i = i2;
-                    textView10 = textView23;
                     textView15.setVisibility(View.VISIBLE);
                     textView24.setVisibility(View.VISIBLE);
                     textView15.setText(plat.getNom());
@@ -333,12 +249,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView15, textView24);
                     }
-                    textView23 = textView10;
-                    textView = textView32;
+                    i++;
                     break;
                 case 5:
-                    i = i2;
-                    textView10 = textView23;
                     textView16.setVisibility(View.VISIBLE);
                     textView26.setVisibility(View.VISIBLE);
                     textView16.setText(plat.getNom());
@@ -348,12 +261,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView16, textView26);
                     }
-                    textView23 = textView10;
-                    textView = textView32;
+                    i++;
                     break;
                 case 6:
-                    i = i2;
-                    textView10 = textView23;
                     textView17.setVisibility(View.VISIBLE);
                     textView28.setVisibility(View.VISIBLE);
                     textView17.setText(plat.getNom());
@@ -363,12 +273,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView17, textView28);
                     }
-                    textView23 = textView10;
-                    textView = textView32;
+                    i++;
                     break;
                 case 7:
-                    i = i2;
-                    textView10 = textView23;
                     textView18.setVisibility(View.VISIBLE);
                     textView30.setVisibility(View.VISIBLE);
                     textView18.setText(plat.getNom());
@@ -378,70 +285,30 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView18, textView30);
                     }
-                    textView23 = textView10;
-                    textView = textView32;
+                    i++;
                     break;
                 case 8:
-                    i = i2;
                     textView19.setVisibility(View.VISIBLE);
                     textView32.setVisibility(View.VISIBLE);
                     textView19.setText(plat.getNom());
-                    textView10 = textView23;
                     textView32.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
                         crossout(textView19, textView32);
                     } else {
                         uncrossout(textView19, textView32);
                     }
-                    textView23 = textView10;
-                    textView = textView32;
+                    i++;
                     break;
                 default:
                     return;
             }
-            textView8 = textView25;
-            textView9 = textView31;
-            textView2 = textView34;
-            textView3 = textView28;
-            textView5 = textView27;
-            textView7 = textView29;
-            textView4 = textView33;
-            textView6 = textView24;
-            i2 = i + 1;
-            textView24 = textView6;
-            textView33 = textView4;
-            textView13 = textView2;
-            textView31 = textView9;
-            textView29 = textView7;
-            textView25 = textView8;
-            textView27 = textView5;
-            textView28 = textView3;
-            textView32 = textView;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoPlat(View v) {
-        TextView textView;
-        int i;
-        TextView textView2;
-        TextView textView3;
-        TextView textView4;
-        TextView textView5;
-        TextView textView6;
-        TextView textView7;
-        TextView textView8;
-        TextView textView9;
-        TextView textView10;
-        TextView textView11;
-        TextView textView12;
-        TextView textView13;
-        TextView textView14;
-        TextView textView15;
-        TextView textView16;
-        TextView textView17;
-        TextView textView18;
-        TextView textView19;
+        Log.e("DEBUG", "Dispo plat");
+        int i = 0;
         TextView textView20 = (TextView) v.findViewById(R.id.plat1);
         textView20.setVisibility(View.GONE);
         TextView textView21 = (TextView) v.findViewById(R.id.plat2);
@@ -469,452 +336,141 @@ public class CarteFragment extends Fragment {
         TextView textView32 = (TextView) v.findViewById(R.id.plat13);
         textView32.setVisibility(View.GONE);
         TextView textView33 = (TextView) v.findViewById(R.id.prixP1);
-        TextView textView34 = textView20;
         textView33.setVisibility(View.GONE);
         TextView textView35 = (TextView) v.findViewById(R.id.prixP2);
-        TextView textView36 = textView33;
         textView35.setVisibility(View.GONE);
         TextView textView37 = (TextView) v.findViewById(R.id.prixP3);
-        TextView textView38 = textView35;
         textView37.setVisibility(View.GONE);
         TextView textView39 = (TextView) v.findViewById(R.id.prixP4);
-        TextView textView40 = textView21;
         textView39.setVisibility(View.GONE);
         TextView textView41 = (TextView) v.findViewById(R.id.prixP5);
-        TextView textView42 = textView37;
         textView41.setVisibility(View.GONE);
         TextView textView43 = (TextView) v.findViewById(R.id.prixP6);
-        TextView textView44 = textView22;
         textView43.setVisibility(View.GONE);
         TextView textView45 = (TextView) v.findViewById(R.id.prixP7);
-        TextView textView46 = textView39;
         textView45.setVisibility(View.GONE);
         TextView textView47 = (TextView) v.findViewById(R.id.prixP8);
-        TextView textView48 = textView23;
         textView47.setVisibility(View.GONE);
         TextView textView49 = (TextView) v.findViewById(R.id.prixP9);
-        TextView textView50 = textView41;
         textView49.setVisibility(View.GONE);
         TextView textView51 = (TextView) v.findViewById(R.id.prixP10);
-        TextView textView52 = textView24;
         textView51.setVisibility(View.GONE);
         TextView textView53 = (TextView) v.findViewById(R.id.prixP11);
-        TextView textView54 = textView43;
         textView53.setVisibility(View.GONE);
         TextView textView55 = (TextView) v.findViewById(R.id.prixP12);
-        TextView textView56 = textView25;
         textView55.setVisibility(View.GONE);
         TextView textView57 = (TextView) v.findViewById(R.id.prixP13);
         textView57.setVisibility(View.GONE);
         Collections.sort(this.listPlat);
-        TextView textView58 = textView45;
-        int i2 = 0;
-        while (i2 < this.listPlat.size() && i2 < 9) {
-            Plat plat = this.listPlat.get(i2);
-            TextView textView59 = textView26;
-            switch (i2) {
+        while (i < this.listPlat.size() && i < 12) {
+            Plat plat = this.listPlat.get(i);
+
+            switch (i) {
                 case 0:
-                    textView = textView57;
-                    i = i2;
-                    TextView textView60 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView47;
-                    textView7 = textView58;
-                    textView8 = textView34;
-                    textView9 = textView51;
-                    TextView textView61 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
-                    textView8.setVisibility(View.VISIBLE);
-                    textView16 = textView60;
-                    textView17 = textView36;
-                    textView17.setVisibility(View.VISIBLE);
-                    textView8.setText(plat.getNom());
-                    textView18 = textView61;
-                    textView17.setText(plat.getPrixCarteString() + " euros");
+                    textView20.setVisibility(View.VISIBLE);
+                    textView33.setVisibility(View.VISIBLE);
+                    textView20.setText(plat.getNom());
+                    textView33.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView8, textView17);
+                        crossout(textView20, textView33);
                     } else {
-                        uncrossout(textView8, textView17);
-                        continue;
+                        uncrossout(textView20, textView33);
                     }
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 1:
-                    textView = textView57;
-                    i = i2;
-                    TextView textView62 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView6 = textView47;
-                    textView15 = textView55;
-                    TextView textView63 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView7 = textView58;
-                    textView9 = textView51;
-                    TextView textView64 = textView40;
-                    textView64.setVisibility(View.VISIBLE);
-                    textView10 = textView62;
-                    TextView textView65 = textView38;
-                    textView65.setVisibility(View.VISIBLE);
-                    textView64.setText(plat.getNom());
-                    textView2 = textView63;
-                    textView65.setText(plat.getPrixCarteString() + " euros");
+
+                    textView21.setVisibility(View.VISIBLE);
+                    textView35.setVisibility(View.VISIBLE);
+                    textView21.setText(plat.getNom());
+                    textView35.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView64, textView65);
+                        crossout(textView21, textView35);
                     } else {
-                        uncrossout(textView64, textView65);
+                        uncrossout(textView21, textView35);
                     }
-                    textView8 = textView34;
-                    textView16 = textView65;
-                    textView17 = textView36;
-                    textView18 = textView64;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 2:
-                    textView = textView57;
-                    i = i2;
-                    TextView textView66 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView47;
-                    textView7 = textView58;
-                    TextView textView67 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
-                    textView9 = textView51;
-                    TextView textView68 = textView44;
-                    textView68.setVisibility(View.VISIBLE);
-                    textView3 = textView66;
-                    TextView textView69 = textView42;
-                    textView69.setVisibility(View.VISIBLE);
-                    textView68.setText(plat.getNom());
-                    textView11 = textView67;
-                    textView69.setText(plat.getPrixCarteString() + " euros");
+
+                    textView22.setVisibility(View.VISIBLE);
+                    textView37.setVisibility(View.VISIBLE);
+                    textView22.setText(plat.getNom());
+                    textView37.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView68, textView69);
+                        crossout(textView22, textView37);
                     } else {
-                        uncrossout(textView68, textView69);
+                        uncrossout(textView22, textView37);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView68;
-                    TextView textView70 = textView40;
-                    textView10 = textView69;
-                    textView17 = textView36;
-                    textView18 = textView70;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 3:
-                    textView = textView57;
-                    i = i2;
-                    TextView textView71 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView6 = textView47;
-                    textView15 = textView55;
-                    TextView textView72 = textView48;
-                    TextView textView73 = textView52;
-                    textView5 = textView54;
-                    textView7 = textView58;
-                    textView9 = textView51;
-                    textView72.setVisibility(View.VISIBLE);
-                    textView12 = textView71;
-                    TextView textView74 = textView46;
-                    textView74.setVisibility(View.VISIBLE);
-                    textView72.setText(plat.getNom());
-                    textView4 = textView73;
-                    textView74.setText(plat.getPrixCarteString() + " euros");
+
+                    textView23.setVisibility(View.VISIBLE);
+                    textView39.setVisibility(View.VISIBLE);
+                    textView23.setText(plat.getNom());
+                    textView39.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView72, textView74);
+                        crossout(textView23, textView39);
                     } else {
-                        uncrossout(textView72, textView74);
+                        uncrossout(textView23, textView39);
                     }
-                    TextView textView75 = textView44;
-                    textView3 = textView74;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView72;
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView75;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 4:
-                    textView = textView57;
-                    i = i2;
-                    TextView textView76 = textView54;
-                    textView6 = textView47;
-                    textView7 = textView58;
-                    TextView textView77 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
-                    textView9 = textView51;
-                    TextView textView78 = textView52;
-                    textView78.setVisibility(View.VISIBLE);
-                    textView5 = textView76;
-                    TextView textView79 = textView50;
-                    textView79.setVisibility(View.VISIBLE);
-                    textView78.setText(plat.getNom());
-                    textView13 = textView77;
-                    textView79.setText(plat.getPrixCarteString() + " euros");
+
+                    textView24.setVisibility(View.VISIBLE);
+                    textView41.setVisibility(View.VISIBLE);
+                    textView24.setText(plat.getNom());
+                    textView41.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView78, textView79);
+                        crossout(textView24, textView41);
                     } else {
-                        uncrossout(textView78, textView79);
+                        uncrossout(textView24, textView41);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView78;
-                    TextView textView80 = textView48;
-                    textView12 = textView79;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView80;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 5:
-                    textView = textView57;
-                    i = i2;
-                    textView6 = textView47;
-                    textView15 = textView55;
-                    TextView textView81 = textView58;
-                    TextView textView82 = textView56;
-                    textView9 = textView51;
-                    textView82.setVisibility(View.VISIBLE);
-                    textView14 = textView59;
-                    TextView textView83 = textView54;
-                    textView83.setVisibility(View.VISIBLE);
-                    textView82.setText(plat.getNom());
-                    textView7 = textView81;
-                    textView83.setText(plat.getPrixCarteString() + " euros");
+
+                    textView25.setVisibility(View.VISIBLE);
+                    textView43.setVisibility(View.VISIBLE);
+                    textView25.setText(plat.getNom());
+                    textView43.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView82, textView83);
+                        crossout(textView25, textView43);
                     } else {
-                        uncrossout(textView82, textView83);
+                        uncrossout(textView25, textView43);
                     }
-                    TextView textView84 = textView52;
-                    textView5 = textView83;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView82;
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView84;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 6:
-                    textView = textView57;
-                    i = i2;
-                    textView6 = textView47;
-                    textView59.setVisibility(View.VISIBLE);
-                    textView15 = textView55;
-                    TextView textView85 = textView58;
-                    textView85.setVisibility(View.VISIBLE);
-                    textView59.setText(plat.getNom());
-                    textView9 = textView51;
-                    textView85.setText(plat.getPrixCarteString() + " euros");
+
+                    textView26.setVisibility(View.VISIBLE);
+                    textView45.setVisibility(View.VISIBLE);
+                    textView26.setText(plat.getNom());
+                    textView45.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView59, textView85);
+                        crossout(textView26, textView45);
                     } else {
-                        uncrossout(textView59, textView85);
+                        uncrossout(textView26, textView45);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView7 = textView85;
-                    TextView textView86 = textView56;
-                    textView14 = textView59;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView86;
-                    //continue;
-                    textView51 = textView9;
-                    textView58 = textView7;
-                    textView26 = textView14;
-                    textView56 = textView13;
-                    textView54 = textView5;
-                    textView52 = textView4;
-                    textView50 = textView12;
-                    textView48 = textView11;
-                    textView46 = textView3;
-                    textView44 = textView2;
-                    textView42 = textView10;
-                    textView38 = textView16;
-                    textView40 = textView18;
-                    textView36 = textView17;
-                    textView34 = textView8;
-                    textView47 = textView6;
-                    textView57 = textView;
-                    i2 = i + 1;
-                    textView55 = textView15;
+                    i++;
+                    break;
                 case 7:
-                    i = i2;
+
                     textView27.setVisibility(View.VISIBLE);
-                    textView6 = textView47;
-                    textView6.setVisibility(View.VISIBLE);
+                    textView47.setVisibility(View.VISIBLE);
                     textView27.setText(plat.getNom());
-                    textView = textView57;
-                    textView6.setText(plat.getPrixCarteString() + " euros");
+                    textView47.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView27, textView6);
+                        crossout(textView27, textView47);
                     } else {
-                        uncrossout(textView27, textView6);
+                        uncrossout(textView27, textView47);
                     }
-                    textView8 = textView34;
-                    textView17 = textView36;
-                    textView16 = textView38;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
-                    textView7 = textView58;
+                    i++;
                     break;
                 case 8:
-                    textView19 = textView47;
-                    i = i2;
+
                     textView28.setVisibility(View.VISIBLE);
                     textView49.setVisibility(View.VISIBLE);
                     textView28.setText(plat.getNom());
@@ -924,27 +480,10 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView28, textView49);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView19;
-                    textView = textView57;
-                    textView7 = textView58;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
+                    i++;
                     break;
                 case 9:
-                    textView19 = textView47;
-                    i = i2;
+
                     textView29.setVisibility(View.VISIBLE);
                     textView51.setVisibility(View.VISIBLE);
                     textView29.setText(plat.getNom());
@@ -954,27 +493,10 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView29, textView51);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView19;
-                    textView = textView57;
-                    textView7 = textView58;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
+                    i++;
                     break;
                 case 10:
-                    textView19 = textView47;
-                    i = i2;
+
                     textView30.setVisibility(View.VISIBLE);
                     textView53.setVisibility(View.VISIBLE);
                     textView30.setText(plat.getNom());
@@ -984,27 +506,10 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView30, textView53);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView19;
-                    textView = textView57;
-                    textView7 = textView58;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
+                    i++;
                     break;
                 case 11:
-                    textView19 = textView47;
-                    i = i2;
+
                     textView31.setVisibility(View.VISIBLE);
                     textView55.setVisibility(View.VISIBLE);
                     textView31.setText(plat.getNom());
@@ -1014,89 +519,32 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView31, textView55);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView19;
-                    textView = textView57;
-                    textView7 = textView58;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
+                    i++;
                     break;
                 case 12:
-                    i = i2;
+
                     textView32.setVisibility(View.VISIBLE);
                     textView57.setVisibility(View.VISIBLE);
                     textView32.setText(plat.getNom());
-                    textView19 = textView47;
                     textView57.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
                         crossout(textView32, textView57);
                     } else {
                         uncrossout(textView32, textView57);
                     }
-                    textView8 = textView34;
-                    textView16 = textView38;
-                    textView2 = textView44;
-                    textView3 = textView46;
-                    textView4 = textView52;
-                    textView5 = textView54;
-                    textView6 = textView19;
-                    textView = textView57;
-                    textView7 = textView58;
-                    textView17 = textView36;
-                    textView18 = textView40;
-                    textView10 = textView42;
-                    textView11 = textView48;
-                    textView12 = textView50;
-                    textView13 = textView56;
-                    textView14 = textView59;
-                    textView15 = textView55;
+                    i++;
                     break;
                 default:
                     return;
             }
-            textView9 = textView51;
-            textView51 = textView9;
-            textView58 = textView7;
-            textView26 = textView14;
-            textView56 = textView13;
-            textView54 = textView5;
-            textView52 = textView4;
-            textView50 = textView12;
-            textView48 = textView11;
-            textView46 = textView3;
-            textView44 = textView2;
-            textView42 = textView10;
-            textView38 = textView16;
-            textView40 = textView18;
-            textView36 = textView17;
-            textView34 = textView8;
-            textView47 = textView6;
-            textView57 = textView;
-            i2 = i + 1;
-            textView55 = textView15;
+            i++;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoDessert(View v) {
-        TextView textView;
-        int i;
-        TextView textView2;
-        TextView textView3;
-        TextView textView4;
-        TextView textView5;
-        TextView textView6;
+        Log.e("DEBUG", "Dispo dessert");
+        int i=0;
         TextView textView7 = (TextView) v.findViewById(R.id.dessert1);
         textView7.setVisibility(View.GONE);
         TextView textView8 = (TextView) v.findViewById(R.id.dessert2);
@@ -1126,52 +574,35 @@ public class CarteFragment extends Fragment {
         TextView textView20 = (TextView) v.findViewById(R.id.prixD7);
         textView20.setVisibility(View.GONE);
         Collections.sort(this.listDessert);
-        TextView textView21 = textView14;
-        int i2 = 0;
-        while (i2 < this.listDessert.size() && i2 < 9) {
-            Plat plat = this.listDessert.get(i2);
+        while (i < this.listDessert.size() && i < 6) {
+            Plat plat = this.listDessert.get(i);
             TextView textView22 = textView7;
-            switch (i2) {
+            switch (i) {
                 case 0:
-                    textView = textView20;
-                    i = i2;
-                    textView2 = textView22;
-                    textView2.setVisibility(View.VISIBLE);
-                    textView3 = textView8;
-                    textView4 = textView21;
-                    textView4.setVisibility(View.VISIBLE);
-                    textView2.setText(plat.getNom());
-                    textView5 = textView9;
-                    textView4.setText(plat.getPrixCarteString() + " euros");
+                    textView7.setVisibility(View.VISIBLE);
+                    textView14.setVisibility(View.VISIBLE);
+                    textView7.setText(plat.getNom());
+                    textView14.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
-                        crossout(textView2, textView4);
+                        crossout(textView7, textView14);
                     } else {
-                        uncrossout(textView2, textView4);
-                        continue;
+                        uncrossout(textView7, textView14);
                     }
-                    i2 = i + 1;
-                    textView7 = textView2;
-                    textView9 = textView5;
-                    textView20 = textView;
-                    textView21 = textView4;
-                    textView8 = textView3;
+                    i++;
+                    break;
                 case 1:
-                    i = i2;
                     textView8.setVisibility(View.VISIBLE);
                     textView15.setVisibility(View.VISIBLE);
                     textView8.setText(plat.getNom());
-                    textView = textView20;
                     textView15.setText(plat.getPrixCarteString() + " euros");
                     if (plat.isDispo()) {
                         uncrossout(textView8, textView15);
-                        break;
                     } else {
                         crossout(textView8, textView15);
-                        break;
                     }
+                    i++;
+                    break;
                 case 2:
-                    i = i2;
-                    textView6 = textView15;
                     textView9.setVisibility(View.VISIBLE);
                     textView16.setVisibility(View.VISIBLE);
                     textView9.setText(plat.getNom());
@@ -1181,12 +612,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView9, textView16);
                     }
-                    textView15 = textView6;
-                    textView = textView20;
+                    i++;
                     break;
                 case 3:
-                    i = i2;
-                    textView6 = textView15;
                     textView10.setVisibility(View.VISIBLE);
                     textView17.setVisibility(View.VISIBLE);
                     textView10.setText(plat.getNom());
@@ -1196,12 +624,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView10, textView17);
                     }
-                    textView15 = textView6;
-                    textView = textView20;
+                    i++;
                     break;
                 case 4:
-                    i = i2;
-                    textView6 = textView15;
                     textView11.setVisibility(View.VISIBLE);
                     textView18.setVisibility(View.VISIBLE);
                     textView11.setText(plat.getNom());
@@ -1211,12 +636,9 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView11, textView18);
                     }
-                    textView15 = textView6;
-                    textView = textView20;
+                    i++;
                     break;
                 case 5:
-                    i = i2;
-                    textView6 = textView15;
                     textView12.setVisibility(View.VISIBLE);
                     textView19.setVisibility(View.VISIBLE);
                     textView12.setText(plat.getNom());
@@ -1226,37 +648,24 @@ public class CarteFragment extends Fragment {
                     } else {
                         uncrossout(textView12, textView19);
                     }
-                    textView15 = textView6;
-                    textView = textView20;
+                    i++;
                     break;
                 case 6:
-                    i = i2;
                     textView13.setVisibility(View.VISIBLE);
                     textView20.setVisibility(View.VISIBLE);
                     textView13.setText(plat.getNom());
-                    textView6 = textView15;
                     textView20.setText(plat.getPrixCarteString() + " euros");
                     if (!plat.isDispo()) {
                         crossout(textView13, textView20);
                     } else {
                         uncrossout(textView13, textView20);
                     }
-                    textView15 = textView6;
-                    textView = textView20;
+                    i++;
                     break;
                 default:
                     return;
             }
-            textView2 = textView22;
-            textView3 = textView8;
-            textView4 = textView21;
-            textView5 = textView9;
-            i2 = i + 1;
-            textView7 = textView2;
-            textView9 = textView5;
-            textView20 = textView;
-            textView21 = textView4;
-            textView8 = textView3;
+            i++;
         }
     }
 

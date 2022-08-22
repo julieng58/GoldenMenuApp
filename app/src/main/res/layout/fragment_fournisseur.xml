@@ -1,15 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fillViewport="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollView">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollView">
     <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/frameLayout17">
         <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="36sp" android:textColor="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView45" android:id="@+id/textView11" android:text="Patricia Rougeaux"/>
         <TextView android:layout_marginEnd="32dp" android:textAlignment="center" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/textView46" android:id="@+id/textView49" android:text="Après un long parcours de reconversion et une formation au lycée agricole de Chambéry, Patricia a acheté un terrain en 2016 à La Chapelle-Monlinard dans le Cher. Elle a ensuite créé l’exploitation et commencé les premiers travaux dans la foulée. Son activité s’organise autour de la transformation des escargots dans un premier temps, puis les visites pédagogiques."/>
-        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="36sp" android:textColor="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView35" android:id="@+id/textView41" android:text="Huilerie d’Auron"/>
-        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="14sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView41" android:id="@+id/textView43" android:text="DUN SUR AURON – CHER "/>
-        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="36sp" android:textColor="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView48" android:id="@+id/textView44" android:text="Huilerie Brossard"/>
-        <TextView android:layout_marginEnd="32dp" android:textAlignment="center" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/textView47" android:id="@+id/textView45" android:text="L’Huilerie Brossard quant à elle fournit Le Chef en huiles de cameline, moutarde et colza. Favorisant la biodiversité et les méthodes artisanales, ces huiles sont pressées sur place. Leur goût atypique est parfait pour réveiller délicatement un plat."/>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:text="Le fournil St Arigle"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:text="NEVERS"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:text="Huilerie Brossard"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="L’Huilerie Brossard quant à elle fournit Le Chef en huiles de cameline, moutarde et colza. Favorisant la biodiversité et les méthodes artisanales, ces huiles sont pressées sur place. Leur goût atypique est parfait pour réveiller délicatement un plat."
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47"
+            tools:visibility="gone" />
         <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="14sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView11" android:id="@+id/textView46" android:text="L’ESCARGOT SUR LOIRE"/>
-        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="14sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView44" android:id="@+id/textView47" android:text="RAVEAU"/>
-        <TextView android:layout_marginEnd="32dp" android:textAlignment="center" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/textView43" android:id="@+id/textView48" android:text="L’Huilerie d’Auron collecte les noix et les noisettes auprès des particuliers de la région pour élaborer, à partir de recettes familiales, des huiles aux arômes intenses, reflet d’un savoir-faire ancestral."/>
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:text="RAVEAU"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Boulangerie pâtisserie (tarterie) axée sur la fabrication de pains au levain liquide et pains bio."
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
         <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="36sp" android:textColor="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView49" android:id="@+id/textView42" android:text="Nos Fromages"/>
         <TextView android:layout_marginEnd="32dp" android:textAlignment="center" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/textView34" android:id="@+id/textView35" android:text="Depuis 25 ans, La Ferme des Aillots, non loin de La Charité sur Loire, cultive des asperges douces et juteuses, récoltées à la main tous les matins. Des asperges blanches et des asperges vertes, directement du producteur au consommateur. La pleine saison de récolte en avril vous assure de belles assiettes graphiques et gustatives, ponctuées de ce goûteux légume."/>
         <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="36sp" android:textColor="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView31" android:id="@+id/textView33" android:text="Les Bios du Bec"/>
