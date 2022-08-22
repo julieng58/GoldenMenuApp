@@ -136,7 +136,6 @@ public class VdRhoneRougeFragment extends Fragment {
         new ArrayList();
         new ArrayList();
         new ArrayList();
-        TextView textView = (TextView) v.findViewById(R.id.S1label14);
         arrayList.add((TextView) v.findViewById(R.id.S1label1));
         arrayList.add((TextView) v.findViewById(R.id.S1label2));
         arrayList.add((TextView) v.findViewById(R.id.S1label3));
@@ -150,9 +149,8 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList.add((TextView) v.findViewById(R.id.S1label11));
         arrayList.add((TextView) v.findViewById(R.id.S1label12));
         arrayList.add((TextView) v.findViewById(R.id.S1label13));
-        arrayList.add(textView);
+        arrayList.add((TextView) v.findViewById(R.id.S1label14));
         arrayList.add((TextView) v.findViewById(R.id.S1label15));
-        ArrayList arrayList7 = arrayList;
         arrayList2.add((TextView) v.findViewById(R.id.S1prix1));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix2));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix3));
@@ -168,7 +166,6 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList2.add((TextView) v.findViewById(R.id.S1prix13));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix14));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix15));
-        ArrayList arrayList8 = arrayList2;
         arrayList3.add((TextView) v.findViewById(R.id.S1mill1));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill2));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill3));
@@ -184,7 +181,6 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill13));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill14));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
-        ArrayList arrayList9 = arrayList3;
         arrayList4.add((TextView) v.findViewById(R.id.S2label1));
         arrayList4.add((TextView) v.findViewById(R.id.S2label2));
         arrayList4.add((TextView) v.findViewById(R.id.S2label3));
@@ -200,7 +196,6 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList4.add((TextView) v.findViewById(R.id.S2label13));
         arrayList4.add((TextView) v.findViewById(R.id.S2label14));
         arrayList4.add((TextView) v.findViewById(R.id.S2label15));
-        ArrayList arrayList10 = arrayList4;
         arrayList5.add((TextView) v.findViewById(R.id.S2prix2));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix1));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix3));
@@ -216,7 +211,6 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList5.add((TextView) v.findViewById(R.id.S2prix13));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix14));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix15));
-        ArrayList arrayList11 = arrayList5;
         arrayList6.add((TextView) v.findViewById(R.id.S2mill1));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill2));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill3));
@@ -232,23 +226,23 @@ public class VdRhoneRougeFragment extends Fragment {
         arrayList6.add((TextView) v.findViewById(R.id.S2mill13));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill14));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill15));
-        Iterator it = arrayList7.iterator();
+        Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
         }
-        Iterator it2 = arrayList10.iterator();
+        Iterator it2 = arrayList4.iterator();
         while (it2.hasNext()) {
             ((TextView) it2.next()).setVisibility(View.GONE);
         }
-        Iterator it3 = arrayList8.iterator();
+        Iterator it3 = arrayList2.iterator();
         while (it3.hasNext()) {
             ((TextView) it3.next()).setVisibility(View.GONE);
         }
-        Iterator it4 = arrayList11.iterator();
+        Iterator it4 = arrayList5.iterator();
         while (it4.hasNext()) {
             ((TextView) it4.next()).setVisibility(View.GONE);
         }
-        Iterator it5 = arrayList9.iterator();
+        Iterator it5 = arrayList3.iterator();
         while (it5.hasNext()) {
             ((TextView) it5.next()).setVisibility(View.GONE);
         }
@@ -270,18 +264,13 @@ public class VdRhoneRougeFragment extends Fragment {
             int i3 = 0;
             while (i3 < arrayList12.size() && i < i2 && i3 < i2) {
                 Vin vin = arrayList12.get(i3);
-                ArrayList arrayList13 = arrayList7;
-                TextView textView2 = (TextView) arrayList13.get(i);
-                ArrayList arrayList14 = arrayList8;
-                TextView textView3 = (TextView) arrayList14.get(i);
-                ArrayList arrayList15 = arrayList9;
+                TextView textView2 = (TextView) arrayList.get(i);
+                TextView textView3 = (TextView) arrayList2.get(i);
                 Iterator<Integer> it8 = it7;
-                TextView textView4 = (TextView) arrayList15.get(i);
-                arrayList9 = arrayList15;
+                TextView textView4 = (TextView) arrayList3.get(i);
                 textView2.setVisibility(View.VISIBLE);
                 textView3.setVisibility(View.VISIBLE);
                 textView4.setVisibility(View.VISIBLE);
-                ArrayList<Vin> arrayList16 = arrayList12;
                 textView2.setText(vin.getNom() + " (" + vin.getVigneron() + ")");
                 textView3.setText(vin.getPrixToString() + " €");
                 Log.e("DEBUG", "On est la");
@@ -297,22 +286,16 @@ public class VdRhoneRougeFragment extends Fragment {
                 i += 1;
                 i3 += 1;
                 it7 = it8;
-                arrayList12 = arrayList16;
                 i2 = 15;
-                arrayList7 = arrayList13;
-                arrayList8 = arrayList14;
             }
-            arrayList7 = arrayList7;
-            it7 = it7;
-            arrayList8 = arrayList8;
         }
         int i4 = 0;
         while (i4 < this.listPays.size() && i4 < 15) {
             Log.e("DEBUG", "On est la 2");
             Vin vin2 = this.listPays.get(i4);
-            ArrayList arrayList17 = arrayList10;
+            ArrayList arrayList17 = arrayList4;
             TextView textView5 = (TextView) arrayList17.get(i4);
-            ArrayList arrayList18 = arrayList11;
+            ArrayList arrayList18 = arrayList5;
             TextView textView6 = (TextView) arrayList18.get(i4);
             TextView textView7 = (TextView) arrayList6.get(i4);
             textView5.setVisibility(View.VISIBLE);
@@ -330,8 +313,6 @@ public class VdRhoneRougeFragment extends Fragment {
                 uncrossout(textView5, textView7, textView6);
             }
             i4 += 1;
-            arrayList10 = arrayList17;
-            arrayList11 = arrayList18;
         }
     }
 

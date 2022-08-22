@@ -38,9 +38,10 @@
         </activity>
         <activity
             android:name=".AccueilVins"
+            android:label="Carte des vins"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.GoldenMenu.NoActionBar">
+            android:theme="@style/Theme.GoldenMenu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lebengy.goldenmenu.MainActivity" />

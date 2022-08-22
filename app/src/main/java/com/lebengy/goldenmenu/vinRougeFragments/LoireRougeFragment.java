@@ -119,7 +119,6 @@ public class LoireRougeFragment extends Fragment {
         ArrayList arrayList8 = new ArrayList();
         ArrayList arrayList9 = new ArrayList();
         ArrayList arrayList10 = new ArrayList();
-        TextView textView = (TextView) v.findViewById(R.id.S1label14);
         arrayList.add((TextView) v.findViewById(R.id.S1label1));
         arrayList.add((TextView) v.findViewById(R.id.S1label2));
         arrayList.add((TextView) v.findViewById(R.id.S1label3));
@@ -133,9 +132,8 @@ public class LoireRougeFragment extends Fragment {
         arrayList.add((TextView) v.findViewById(R.id.S1label11));
         arrayList.add((TextView) v.findViewById(R.id.S1label12));
         arrayList.add((TextView) v.findViewById(R.id.S1label13));
-        arrayList.add(textView);
+        arrayList.add((TextView) v.findViewById(R.id.S1label14));
         arrayList.add((TextView) v.findViewById(R.id.S1label15));
-        ArrayList arrayList11 = arrayList;
         arrayList2.add((TextView) v.findViewById(R.id.S1prix1));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix2));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix3));
@@ -151,7 +149,6 @@ public class LoireRougeFragment extends Fragment {
         arrayList2.add((TextView) v.findViewById(R.id.S1prix13));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix14));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix15));
-        ArrayList arrayList12 = arrayList2;
         arrayList3.add((TextView) v.findViewById(R.id.S1mill1));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill2));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill3));
@@ -167,7 +164,6 @@ public class LoireRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill13));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill14));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
-        ArrayList arrayList13 = arrayList3;
         arrayList4.add((TextView) v.findViewById(R.id.S2label1));
         arrayList4.add((TextView) v.findViewById(R.id.S2label2));
         arrayList4.add((TextView) v.findViewById(R.id.S2label3));
@@ -183,7 +179,6 @@ public class LoireRougeFragment extends Fragment {
         arrayList4.add((TextView) v.findViewById(R.id.S2label13));
         arrayList4.add((TextView) v.findViewById(R.id.S2label14));
         arrayList4.add((TextView) v.findViewById(R.id.S2label15));
-        ArrayList arrayList14 = arrayList4;
         arrayList5.add((TextView) v.findViewById(R.id.S2prix2));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix1));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix3));
@@ -199,7 +194,6 @@ public class LoireRougeFragment extends Fragment {
         arrayList5.add((TextView) v.findViewById(R.id.S2prix13));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix14));
         arrayList5.add((TextView) v.findViewById(R.id.S2prix15));
-        ArrayList arrayList15 = arrayList5;
         arrayList6.add((TextView) v.findViewById(R.id.S2mill1));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill2));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill3));
@@ -215,7 +209,6 @@ public class LoireRougeFragment extends Fragment {
         arrayList6.add((TextView) v.findViewById(R.id.S2mill13));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill14));
         arrayList6.add((TextView) v.findViewById(R.id.S2mill15));
-        ArrayList arrayList16 = arrayList6;
         arrayList7.add((TextView) v.findViewById(R.id.s3label1));
         arrayList7.add((TextView) v.findViewById(R.id.s3label2));
         arrayList7.add((TextView) v.findViewById(R.id.s3label3));
@@ -250,11 +243,11 @@ public class LoireRougeFragment extends Fragment {
         arrayList10.add((TextView) v.findViewById(R.id.secteur3));
         arrayList10.add((TextView) v.findViewById(R.id.headerMillesime3));
         arrayList10.add((TextView) v.findViewById(R.id.headerPrix3));
-        Iterator it = arrayList11.iterator();
+        Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
         }
-        Iterator it2 = arrayList14.iterator();
+        Iterator it2 = arrayList4.iterator();
         while (it2.hasNext()) {
             ((TextView) it2.next()).setVisibility(View.GONE);
         }
@@ -262,11 +255,11 @@ public class LoireRougeFragment extends Fragment {
         while (it3.hasNext()) {
             ((TextView) it3.next()).setVisibility(View.GONE);
         }
-        Iterator it4 = arrayList12.iterator();
+        Iterator it4 = arrayList2.iterator();
         while (it4.hasNext()) {
             ((TextView) it4.next()).setVisibility(View.GONE);
         }
-        Iterator it5 = arrayList15.iterator();
+        Iterator it5 = arrayList5.iterator();
         while (it5.hasNext()) {
             ((TextView) it5.next()).setVisibility(View.GONE);
         }
@@ -274,11 +267,11 @@ public class LoireRougeFragment extends Fragment {
         while (it6.hasNext()) {
             ((TextView) it6.next()).setVisibility(View.GONE);
         }
-        Iterator it7 = arrayList13.iterator();
+        Iterator it7 = arrayList3.iterator();
         while (it7.hasNext()) {
             ((TextView) it7.next()).setVisibility(View.GONE);
         }
-        Iterator it8 = arrayList16.iterator();
+        Iterator it8 = arrayList6.iterator();
         while (it8.hasNext()) {
             ((TextView) it8.next()).setVisibility(View.GONE);
         }
@@ -300,12 +293,9 @@ public class LoireRougeFragment extends Fragment {
                 break;
             }
             Vin vin = this.listSanc.get(i3);
-            ArrayList arrayList17 = arrayList11;
-            TextView textView2 = (TextView) arrayList17.get(i3);
-            ArrayList arrayList18 = arrayList12;
-            TextView textView3 = (TextView) arrayList18.get(i3);
-            ArrayList arrayList19 = arrayList13;
-            TextView textView4 = (TextView) arrayList19.get(i3);
+            TextView textView2 = (TextView) arrayList.get(i3);
+            TextView textView3 = (TextView) arrayList2.get(i3);
+            TextView textView4 = (TextView) arrayList3.get(i3);
             textView2.setVisibility(View.VISIBLE);
             textView3.setVisibility(View.VISIBLE);
             textView4.setVisibility(View.VISIBLE);
@@ -321,9 +311,6 @@ public class LoireRougeFragment extends Fragment {
                 uncrossout(textView2, textView4, textView3);
             }
             i3 += 1;
-            arrayList11 = arrayList17;
-            arrayList12 = arrayList18;
-            arrayList13 = arrayList19;
         }
         int i4 = 0;
         for (Integer num : this.hashMapLoire.keySet()) {
@@ -332,15 +319,12 @@ public class LoireRougeFragment extends Fragment {
             int i5 = i2;
             while (i5 < arrayList20.size() && i4 < i && i5 < i) {
                 Vin vin2 = arrayList20.get(i5);
-                ArrayList arrayList21 = arrayList14;
-                TextView textView5 = (TextView) arrayList21.get(i4);
-                ArrayList arrayList22 = arrayList15;
-                TextView textView6 = (TextView) arrayList22.get(i4);
-                TextView textView7 = (TextView) arrayList16.get(i4);
+                TextView textView5 = (TextView) arrayList4.get(i4);
+                TextView textView6 = (TextView) arrayList5.get(i4);
+                TextView textView7 = (TextView) arrayList6.get(i4);
                 textView5.setVisibility(i2);
                 textView6.setVisibility(i2);
                 textView7.setVisibility(i2);
-                ArrayList arrayList23 = arrayList16;
                 textView5.setText(vin2.getNom() + " (" + vin2.getVigneron() + ")");
                 textView6.setText(vin2.getPrixToString() + " €");
                 try {
@@ -354,15 +338,9 @@ public class LoireRougeFragment extends Fragment {
                 }
                 i4 += 1;
                 i5 += 1;
-                arrayList14 = arrayList21;
-                arrayList15 = arrayList22;
-                arrayList16 = arrayList23;
                 i2 = 0;
                 i = 15;
             }
-            arrayList14 = arrayList14;
-            arrayList15 = arrayList15;
-            arrayList16 = arrayList16;
             i2 = 0;
             i = 15;
         }

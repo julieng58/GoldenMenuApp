@@ -159,7 +159,6 @@ public class PlusAuSudRougeFragment extends Fragment {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         ArrayList arrayList3 = new ArrayList();
-        TextView textView = (TextView) v.findViewById(R.id.S1label14);
         arrayList.add((TextView) v.findViewById(R.id.S1label1));
         arrayList.add((TextView) v.findViewById(R.id.S1label2));
         arrayList.add((TextView) v.findViewById(R.id.S1label3));
@@ -173,9 +172,8 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList.add((TextView) v.findViewById(R.id.S1label11));
         arrayList.add((TextView) v.findViewById(R.id.S1label12));
         arrayList.add((TextView) v.findViewById(R.id.S1label13));
-        arrayList.add(textView);
+        arrayList.add((TextView) v.findViewById(R.id.S1label14));
         arrayList.add((TextView) v.findViewById(R.id.S1label15));
-        ArrayList arrayList4 = arrayList;
         arrayList2.add((TextView) v.findViewById(R.id.S1prix1));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix2));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix3));
@@ -191,7 +189,6 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList2.add((TextView) v.findViewById(R.id.S1prix13));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix14));
         arrayList2.add((TextView) v.findViewById(R.id.S1prix15));
-        ArrayList arrayList5 = arrayList2;
         arrayList3.add((TextView) v.findViewById(R.id.S1mill1));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill2));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill3));
@@ -207,11 +204,11 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S1mill13));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill14));
         arrayList3.add((TextView) v.findViewById(R.id.S1mill15));
-        Iterator it = arrayList4.iterator();
+        Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
         }
-        Iterator it2 = arrayList5.iterator();
+        Iterator it2 = arrayList2.iterator();
         while (it2.hasNext()) {
             ((TextView) it2.next()).setVisibility(View.GONE);
         }
@@ -226,10 +223,8 @@ public class PlusAuSudRougeFragment extends Fragment {
             int i2 = 1;
             while (i2 < arrayList6.size() && i < 15 && i2 < 15) {
                 Vin vin = arrayList6.get(i2);
-                ArrayList arrayList7 = arrayList4;
-                TextView textView2 = (TextView) arrayList7.get(i);
-                ArrayList arrayList8 = arrayList5;
-                TextView textView3 = (TextView) arrayList8.get(i);
+                TextView textView2 = (TextView) arrayList.get(i);
+                TextView textView3 = (TextView) arrayList2.get(i);
                 TextView textView4 = (TextView) arrayList3.get(i);
                 textView2.setVisibility(View.VISIBLE);
                 textView3.setVisibility(View.VISIBLE);
@@ -247,11 +242,7 @@ public class PlusAuSudRougeFragment extends Fragment {
                 }
                 i += 1;
                 i2 += 1;
-                arrayList4 = arrayList7;
-                arrayList5 = arrayList8;
             }
-            arrayList4 = arrayList4;
-            arrayList5 = arrayList5;
         }
     }
 
@@ -260,7 +251,6 @@ public class PlusAuSudRougeFragment extends Fragment {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         ArrayList arrayList3 = new ArrayList();
-        TextView textView = (TextView) v.findViewById(R.id.S2label14);
         arrayList.add((TextView) v.findViewById(R.id.S2label1));
         arrayList.add((TextView) v.findViewById(R.id.S2label2));
         arrayList.add((TextView) v.findViewById(R.id.S2label3));
@@ -274,9 +264,8 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList.add((TextView) v.findViewById(R.id.S2label11));
         arrayList.add((TextView) v.findViewById(R.id.S2label12));
         arrayList.add((TextView) v.findViewById(R.id.S2label13));
-        arrayList.add(textView);
+        arrayList.add((TextView) v.findViewById(R.id.S2label14));
         arrayList.add((TextView) v.findViewById(R.id.S2label15));
-        ArrayList arrayList4 = arrayList;
         arrayList2.add((TextView) v.findViewById(R.id.S2prix2));
         arrayList2.add((TextView) v.findViewById(R.id.S2prix1));
         arrayList2.add((TextView) v.findViewById(R.id.S2prix3));
@@ -292,7 +281,6 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList2.add((TextView) v.findViewById(R.id.S2prix13));
         arrayList2.add((TextView) v.findViewById(R.id.S2prix14));
         arrayList2.add((TextView) v.findViewById(R.id.S2prix15));
-        ArrayList arrayList5 = arrayList2;
         arrayList3.add((TextView) v.findViewById(R.id.S2mill1));
         arrayList3.add((TextView) v.findViewById(R.id.S2mill2));
         arrayList3.add((TextView) v.findViewById(R.id.S2mill3));
@@ -308,11 +296,11 @@ public class PlusAuSudRougeFragment extends Fragment {
         arrayList3.add((TextView) v.findViewById(R.id.S2mill13));
         arrayList3.add((TextView) v.findViewById(R.id.S2mill14));
         arrayList3.add((TextView) v.findViewById(R.id.S2mill15));
-        Iterator it = arrayList4.iterator();
+        Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
         }
-        Iterator it2 = arrayList5.iterator();
+        Iterator it2 = arrayList2.iterator();
         while (it2.hasNext()) {
             ((TextView) it2.next()).setVisibility(View.GONE);
         }
@@ -327,10 +315,8 @@ public class PlusAuSudRougeFragment extends Fragment {
             int i2 = 1;
             while (i2 < arrayList6.size() && i < 15 && i2 < 15) {
                 Vin vin = arrayList6.get(i2);
-                ArrayList arrayList7 = arrayList4;
-                TextView textView2 = (TextView) arrayList7.get(i);
-                ArrayList arrayList8 = arrayList5;
-                TextView textView3 = (TextView) arrayList8.get(i);
+                TextView textView2 = (TextView) arrayList.get(i);
+                TextView textView3 = (TextView) arrayList2.get(i);
                 TextView textView4 = (TextView) arrayList3.get(i);
                 textView2.setVisibility(View.VISIBLE);
                 textView3.setVisibility(View.VISIBLE);
@@ -348,11 +334,7 @@ public class PlusAuSudRougeFragment extends Fragment {
                 }
                 i += 1;
                 i2 += 1;
-                arrayList4 = arrayList7;
-                arrayList5 = arrayList8;
             }
-            arrayList4 = arrayList4;
-            arrayList5 = arrayList5;
         }
     }
 

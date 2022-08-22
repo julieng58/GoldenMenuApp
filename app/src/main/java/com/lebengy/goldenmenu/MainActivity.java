@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void dispoInfo() {
-        //this.fadingTextView.setTexts((String[]) this.listInfoList.toArray(new String[0]));
+        this.fadingTextView.setTexts((String[]) this.listInfoList.toArray(new String[0]));
     }
 
     public void clickOnVins(View view) {
