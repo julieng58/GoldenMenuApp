@@ -8,7 +8,8 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             app:tabIndicatorColor="@color/colorAccentOld"
-            app:tabSelectedTextColor="@color/bright_foreground_inverse_material_light" />
+            app:tabTextColor="#C8C8C8"
+            app:tabSelectedTextColor="@color/background_floating_material_light" />
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager app:layout_behavior="@string/appbar_scrolling_view_behavior" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/view_pager"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

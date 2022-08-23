@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fillViewport="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollView">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/frameLayout2">
+
+        <TextView
+            android:id="@+id/intolerance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/gluten"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextNext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mentionLegales" />
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/supChevre" android:id="@+id/mentionLegales" android:textColor="@color/colorTextNext" android:text="Prix nets en euros – TVA à 10,00 % incluse – Service compris  "/>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/colorTextNext"
+            android:textColor="@color/colorTextNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dessert5" />
+
+        <TextView
+            android:id="@+id/supFromage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text=" 6,00 euros supplément avec fromage plateau, préparé par la Maison du fromage "
+            android:textAlignment="center"
+            android:textColor="@color/colorTextNext"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/supChevre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" 5,00 euros supplément avec fromage blanc ou chèvre frais  "
+            android:textAlignment="center"
+            android:textColor="@color/colorTextNext"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/oud45" android:id="@+id/dessert5" android:text="dessert5"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oud34" android:id="@+id/dessert4" android:text="dessert4"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/dessert4" android:id="@+id/oud45" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/dessert3" android:id="@+id/oud34" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oud23" android:id="@+id/dessert3" android:text="dessert3"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oud12" android:id="@+id/dessert2" android:text="dessert2"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/divider3" android:id="@+id/dessert1" android:text="dessert1"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/dessert2" android:id="@+id/oud23" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/dessert1" android:id="@+id/oud12" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/divider" android:id="@+id/plat1" android:text="plat1"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oup12" android:id="@+id/plat2" android:text="plat2"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/plat1" android:id="@+id/oup12" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oup23" android:id="@+id/plat3" android:text="plat3"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/plat2" android:id="@+id/oup23" android:text="ou" android:textColor="@color/colorTextNext"/>
+
+        <TextView
+            android:id="@+id/titrePage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:gravity="center_horizontal"
+            android:text="🌱 Menu végétarien à 26 € 🌱"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textColor="@color/colorPrimaryDark" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/titrePage1" android:gravity="center_horizontal" android:textAlignment="center" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/platdessert2" android:text="ENTREE/PLAT/DESSERT"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" android:textColor="#9E1F16" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/platdessert2" android:id="@+id/limitation2" android:text="22 € en formule entrée/plat ou plat/dessert"/>
+
+        <TextView
+            android:id="@+id/limitation3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/josefin_sansold"
+            android:text="La formule à 22 € n'est pas servie le samedi soir et jours fériés"
+            android:textAlignment="center"
+            android:textColor="#9E1F16"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/limitation2" />
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/limitation3" android:id="@+id/entree1" android:text="entree1"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/entree1" android:id="@+id/oue12" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oue12" android:id="@+id/entree2" android:text="entree2"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/entree2" android:id="@+id/oue23" android:text="ou" android:textColor="@color/colorTextNext"/>
+        <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textSize="20sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/oue23" android:id="@+id/entree3" android:text="entree3"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/colorTextNext"
+            android:textColor="@color/colorTextNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entree3" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/colorTextNext"
+            android:textColor="@color/colorTextNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plat3" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="178dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supFromage"
+            app:srcCompat="@drawable/maison_du_fromgae" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

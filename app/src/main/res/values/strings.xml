@@ -6,6 +6,7 @@
     <string name="adresseOuche">Thomas Mousseau 18350 OUROUER LES BOURDELINS</string>
     <string name="adresseRurale">Vincent Robiche 58320 PARIGNY LES VAUX</string>
     <string name="alergene">🌾 : Ne contient pas de gluten\n🌱 : Convient au régime végétarien</string>
+    <string name="gluten">🌾 : Ne contient pas de gluten</string>
     <string name="amorceBoissons">Nos apéritifs \nNos vins \nNos bières \n...</string>
     <string name="amorceMenus">Nos formules \nNos menus \nNotre carte \n...</string>
     <string name="app_name">Restaurant Le Bengy</string>
@@ -33,6 +34,7 @@
     <string name="tab_text_1">Menu enfant</string>
     <string name="tab_text_2">Le menu à 26€</string>
     <string name="tab_text_3">Le menu à 35€</string>
+    <string name="tab_text_vegan">Le menu végétarien</string>
     <string name="tab_text_4">La carte</string>
     <string name="tab_text_5">Nos fournisseurs</string>
     <string name="tab_text_AlsaceSavoie">Alsace et Savoie</string>
