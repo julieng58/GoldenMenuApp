@@ -32,9 +32,9 @@
     <string name="lesVins">🍷C\'est par là !🍺</string>
     <string name="messageVinAuVerre">Nos vins au verre (12 cl) en carafe (45 cl) ou en bouteille (75 cl)</string>
     <string name="tab_text_1">Menu enfant</string>
-    <string name="tab_text_2">Le menu à 26€</string>
-    <string name="tab_text_3">Le menu à 35€</string>
-    <string name="tab_text_vegan">Le menu végétarien</string>
+    <string name="tab_text_2">Menu à 26€</string>
+    <string name="tab_text_3">Menu à 35€</string>
+    <string name="tab_text_vegan">Menu végétarien</string>
     <string name="tab_text_4">La carte</string>
     <string name="tab_text_5">Nos fournisseurs</string>
     <string name="tab_text_AlsaceSavoie">Alsace et Savoie</string>
