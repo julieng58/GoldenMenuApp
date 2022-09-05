@@ -63,9 +63,9 @@ public class PlusAuSudRougeFragment extends Fragment {
 
     public void fetchVins(final View v) {
         CollectionReference collection = this.db.collection("Vin");
-        Integer valueOf = Integer.valueOf((int) 2);
+        Integer valueOf =  2;
         Query whereEqualTo = collection.whereEqualTo("type", valueOf);
-        Integer valueOf2 = Integer.valueOf((int) 1);
+        Integer valueOf2 = 1;
         whereEqualTo.whereEqualTo("appellation", valueOf2).whereEqualTo("region", 11 /*sans conviction Languedoc ? */).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.PlusAuSudRougeFragment.1
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
@@ -90,7 +90,7 @@ public class PlusAuSudRougeFragment extends Fragment {
                 PlusAuSudRougeFragment.this.dispoVins1(v);
             }
         });
-        this.db.collection("Vin").whereEqualTo("type", valueOf).whereEqualTo("appellation", valueOf).whereEqualTo("region", Integer.valueOf((int) 12)).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.PlusAuSudRougeFragment.2
+        this.db.collection("Vin").whereEqualTo("type", valueOf).whereEqualTo("appellation", valueOf).whereEqualTo("region", 12).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.PlusAuSudRougeFragment.2
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -113,7 +113,7 @@ public class PlusAuSudRougeFragment extends Fragment {
                 PlusAuSudRougeFragment.this.dispoVins2(v);
             }
         });
-        this.db.collection("Vin").whereEqualTo("type", valueOf).whereEqualTo("appellation", valueOf2).whereEqualTo("region", Integer.valueOf((int) 15)).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.PlusAuSudRougeFragment.3
+        this.db.collection("Vin").whereEqualTo("type", 2).whereEqualTo("appellation", 1).whereEqualTo("region", 15).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.PlusAuSudRougeFragment.3
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {
@@ -385,11 +385,13 @@ public class PlusAuSudRougeFragment extends Fragment {
         while (it3.hasNext()) {
             ((TextView) it3.next()).setVisibility(View.GONE);
         }
-        int i = 1;
+        int i = 0;
         for (Integer num : this.hashMap3.keySet()) {
             ArrayList<Vin> arrayList4 = this.hashMap3.get(Integer.valueOf(num.intValue()));
             Collections.sort(arrayList4);
-            for (int i2 = 1; i2 < arrayList4.size() && i < 10 && i2 < 10; i2 += 1) {
+            int i2 = 0;
+            while (i2 < arrayList4.size() && i < 10 && i2 < 10) {
+                Log.e("Debug : ", "Index Sud Ouest : " + i2);
                 Vin vin = arrayList4.get(i2);
                 TextView textView = (TextView) arrayList.get(i);
                 TextView textView2 = (TextView) arrayList2.get(i);
@@ -409,6 +411,7 @@ public class PlusAuSudRougeFragment extends Fragment {
                     uncrossout(textView, textView3, textView2);
                 }
                 i += 1;
+                i2++;
             }
         }
     }

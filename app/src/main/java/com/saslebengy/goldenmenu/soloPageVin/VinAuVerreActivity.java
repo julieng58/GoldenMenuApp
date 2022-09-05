@@ -209,24 +209,40 @@ public class VinAuVerreActivity extends AppCompatActivity {
         arrayList.add((TextView) findViewById(R.id.S2label4));
         arrayList.add((TextView) findViewById(R.id.S2label5));
         arrayList.add((TextView) findViewById(R.id.S2label6));
+        arrayList.add((TextView) findViewById(R.id.S2label7));
+        arrayList.add((TextView) findViewById(R.id.S2label8));
+        arrayList.add((TextView) findViewById(R.id.S2label9));
+        arrayList.add((TextView) findViewById(R.id.S2label10));
         arrayList2.add((TextView) findViewById(R.id.S2prix1));
         arrayList2.add((TextView) findViewById(R.id.S2prix2));
         arrayList2.add((TextView) findViewById(R.id.S2prix3));
         arrayList2.add((TextView) findViewById(R.id.S2prix4));
         arrayList2.add((TextView) findViewById(R.id.S2prix5));
         arrayList2.add((TextView) findViewById(R.id.S2prix6));
+        arrayList2.add((TextView) findViewById(R.id.S2prix7));
+        arrayList2.add((TextView) findViewById(R.id.S2prix8));
+        arrayList2.add((TextView) findViewById(R.id.S2prix9));
+        arrayList2.add((TextView) findViewById(R.id.S2prix10));
         arrayList4.add((TextView) findViewById(R.id.S2carafe1));
         arrayList4.add((TextView) findViewById(R.id.S2carafe2));
         arrayList4.add((TextView) findViewById(R.id.S2carafe3));
         arrayList4.add((TextView) findViewById(R.id.S2carafe4));
         arrayList4.add((TextView) findViewById(R.id.S2carafe5));
         arrayList4.add((TextView) findViewById(R.id.S2carafe6));
+        arrayList4.add((TextView) findViewById(R.id.S2carafe7));
+        arrayList4.add((TextView) findViewById(R.id.S2carafe8));
+        arrayList4.add((TextView) findViewById(R.id.S2carafe9));
+        arrayList4.add((TextView) findViewById(R.id.S2carafe10));
         arrayList3.add((TextView) findViewById(R.id.S2verre1));
         arrayList3.add((TextView) findViewById(R.id.S2verre2));
         arrayList3.add((TextView) findViewById(R.id.S2verre3));
         arrayList3.add((TextView) findViewById(R.id.S2verre4));
         arrayList3.add((TextView) findViewById(R.id.S2verre5));
         arrayList3.add((TextView) findViewById(R.id.S2verre6));
+        arrayList3.add((TextView) findViewById(R.id.S2verre7));
+        arrayList3.add((TextView) findViewById(R.id.S2verre8));
+        arrayList3.add((TextView) findViewById(R.id.S2verre9));
+        arrayList3.add((TextView) findViewById(R.id.S2verre10));
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
@@ -244,7 +260,7 @@ public class VinAuVerreActivity extends AppCompatActivity {
             ((TextView) it4.next()).setVisibility(View.GONE);
         }
         Collections.sort(this.listBlanc);
-        for (int i = 0; i < this.listBlanc.size() && i < 6; i += 1) {
+        for (int i = 0; i < this.listBlanc.size() && i < 10; i += 1) {
             VinVerre vinVerre = this.listBlanc.get(i);
             TextView textView = (TextView) arrayList.get(i);
             TextView textView2 = (TextView) arrayList2.get(i);
@@ -293,24 +309,40 @@ public class VinAuVerreActivity extends AppCompatActivity {
         arrayList.add((TextView) findViewById(R.id.S3label4));
         arrayList.add((TextView) findViewById(R.id.S3label5));
         arrayList.add((TextView) findViewById(R.id.S3label6));
+        arrayList.add((TextView) findViewById(R.id.S3label7));
+        arrayList.add((TextView) findViewById(R.id.S3label8));
+        arrayList.add((TextView) findViewById(R.id.S3label9));
+        arrayList.add((TextView) findViewById(R.id.S3label10));
         arrayList2.add((TextView) findViewById(R.id.S3prix1));
         arrayList2.add((TextView) findViewById(R.id.S3prix2));
         arrayList2.add((TextView) findViewById(R.id.S3prix3));
         arrayList2.add((TextView) findViewById(R.id.S3prix4));
         arrayList2.add((TextView) findViewById(R.id.S3prix5));
         arrayList2.add((TextView) findViewById(R.id.S3prix6));
+        arrayList2.add((TextView) findViewById(R.id.S3prix7));
+        arrayList2.add((TextView) findViewById(R.id.S3prix8));
+        arrayList2.add((TextView) findViewById(R.id.S3prix9));
+        arrayList2.add((TextView) findViewById(R.id.S3prix10));
         arrayList4.add((TextView) findViewById(R.id.S3carafe1));
         arrayList4.add((TextView) findViewById(R.id.S3carafe2));
         arrayList4.add((TextView) findViewById(R.id.S3carafe3));
         arrayList4.add((TextView) findViewById(R.id.S3carafe4));
         arrayList4.add((TextView) findViewById(R.id.S3carafe5));
         arrayList4.add((TextView) findViewById(R.id.S3carafe6));
+        arrayList4.add((TextView) findViewById(R.id.S3carafe7));
+        arrayList4.add((TextView) findViewById(R.id.S3carafe8));
+        arrayList4.add((TextView) findViewById(R.id.S3carafe9));
+        arrayList4.add((TextView) findViewById(R.id.S3carafe10));
         arrayList3.add((TextView) findViewById(R.id.S3verre1));
         arrayList3.add((TextView) findViewById(R.id.S3verre2));
         arrayList3.add((TextView) findViewById(R.id.S3verre3));
         arrayList3.add((TextView) findViewById(R.id.S3verre4));
         arrayList3.add((TextView) findViewById(R.id.S3verre5));
         arrayList3.add((TextView) findViewById(R.id.S3verre6));
+        arrayList3.add((TextView) findViewById(R.id.S3verre7));
+        arrayList3.add((TextView) findViewById(R.id.S3verre8));
+        arrayList3.add((TextView) findViewById(R.id.S3verre9));
+        arrayList3.add((TextView) findViewById(R.id.S3verre10));
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             ((TextView) it.next()).setVisibility(View.GONE);
@@ -328,7 +360,7 @@ public class VinAuVerreActivity extends AppCompatActivity {
             ((TextView) it4.next()).setVisibility(View.GONE);
         }
         Collections.sort(this.listRouge);
-        for (int i = 0; i < this.listRouge.size() && i < 6; i += 1) {
+        for (int i = 0; i < this.listRouge.size() && i < 10; i += 1) {
             VinVerre vinVerre = this.listRouge.get(i);
             TextView textView = (TextView) arrayList.get(i);
             TextView textView2 = (TextView) arrayList2.get(i);

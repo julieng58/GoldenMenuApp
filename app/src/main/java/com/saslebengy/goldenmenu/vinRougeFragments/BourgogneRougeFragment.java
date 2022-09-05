@@ -56,7 +56,7 @@ public class BourgogneRougeFragment extends Fragment {
     }
 
     public void fetchVins(final View v) {
-        this.db.collection("Vin").whereEqualTo("type", Integer.valueOf((int) 2)).whereEqualTo("appellation", Integer.valueOf((int) 0)).whereEqualTo("region", Integer.valueOf((int) 5)).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.BourgogneRougeFragment.1
+        this.db.collection("Vin").whereEqualTo("type", Integer.valueOf((int) 2)).whereEqualTo("appellation", 1).whereEqualTo("region", Integer.valueOf((int) 5)).whereArrayContains("contenant", "75").addSnapshotListener(new EventListener<QuerySnapshot>() { // from class: com.lebengy.goldenmenu.vinRougeFragments.BourgogneRougeFragment.1
             @Override // com.google.firebase.firestore.EventListener
             public void onEvent(QuerySnapshot value, FirebaseFirestoreException e) {
                 if (e != null) {

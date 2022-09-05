@@ -11,8 +11,8 @@ android {
         applicationId "com.saslebengy.goldenmenu"
         minSdk 26
         targetSdk 32
-        versionCode 4
-        versionName "GoldenVeganFromageAwaking"
+        versionCode 8
+        versionName "GoldenVin"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
