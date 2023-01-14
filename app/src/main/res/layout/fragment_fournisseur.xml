@@ -128,7 +128,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
-            android:text="Notre plateau de fromage et le fromage blanc est préparé par la maison du fromage à Nevers. Notre chèvre frais ainsi que nos crottins de chèvre viennent de la chèvrerie de Cheugny-2 rue Pierre Brossolette-58640 Varennes Vauzelles"
+            android:text="Notre plateau de fromage et le fromage blanc est préparé par la maison du fromage à Nevers."
             android:textAlignment="center"
             android:textColor="@color/colorTextNext"
             app:layout_constraintBottom_toBottomOf="parent"
