@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -10,25 +12,34 @@
         android:background="#F8ECC9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="90dp" android:layout_height="wrap_content" android:onClick="clickOnBar" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="150dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" app:srcCompat="@drawable/ic_alcool" android:id="@+id/imageButtonBar"/>
+    <ImageButton
+        android:id="@+id/imageButtonBar"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum"
+        app:srcCompat="@drawable/ic_alcool" />
 
     <ImageButton
         android:id="@+id/imageButtonBiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
         android:background="#00FFFFFF"
         android:onClick="clickOnBiere"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBar"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonBar"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonChampagne"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:srcCompat="@drawable/ic_biere" />
 
     <ImageButton
@@ -39,6 +50,7 @@
         android:background="#00FFFFFF"
         android:onClick="clickOnBlanc"
         android:scaleType="fitCenter"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonRouge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButtonRouge"
@@ -51,6 +63,7 @@
         android:layout_marginStart="140dp"
         android:background="#00FFFFFF"
         android:onClick="clickOnBiere"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonBiere"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_biere" />
@@ -63,6 +76,7 @@
         android:layout_marginEnd="150dp"
         android:background="#00FFFFFF"
         android:onClick="clickOnRose"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_bouteillerose" />
@@ -75,6 +89,7 @@
         android:layout_marginEnd="32dp"
         android:background="#00FFFFFF"
         android:onClick="clickOnRouge"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonRose"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonRose"
         app:layout_constraintStart_toEndOf="@+id/imageButtonBlanc"
@@ -90,36 +105,113 @@
         android:background="#00FFFFFF"
         android:onClick="clickOnChampagne"
         android:scaleType="fitCenter"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonMagnum"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonMagnum"
         app:layout_constraintStart_toEndOf="@+id/imageButtonVerre"
         app:srcCompat="@drawable/ic_bouteillechampagne"
         tools:visibility="visible" />
-    <ImageButton android:layout_marginEnd="140dp" android:background="#00FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="clickOnMagnum" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" app:srcCompat="@drawable/ic_magnum" android:id="@+id/imageButtonMagnum"/>
-    <ImageButton android:scaleType="fitCenter" android:background="#00FFFFFF" android:layout_width="72dp" android:layout_height="128dp" android:onClick="clickOnVinVerre" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="@+id/imageButtonDemi" android:layout_marginStart="140dp" app:srcCompat="@drawable/ic_verrerouge" android:id="@+id/imageButtonVerre"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBlanc" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBlanc" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBlanc" android:id="@+id/textView4" android:text="Nos blancs"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonRouge" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonRouge" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRouge" android:id="@+id/textView7" android:text="Nos rouges"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonRose" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonRose" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" android:id="@+id/textView8" android:text="Nos rosés"/>
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonMagnum" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonMagnum" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" android:id="@+id/textView9" android:text="Nos magnums"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonMagnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="140dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnMagnum"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRose"
+        app:srcCompat="@drawable/ic_magnum" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVerre"
+        android:layout_width="72dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="140dp"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnVinVerre"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonDemi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_verrerouge" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/josefin_sansold"
-        android:onClick="clickOnChampagne"
-        android:text="Nos champagnes"
+        android:text="Nos blancs"
         android:textAlignment="center"
         android:textColor="@color/colorTextAccueil"
         android:textSize="24sp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonDemi"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonDemi"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonDemi"
-        tools:visibility="visible" />
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonVerre" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonVerre" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonVerre" android:id="@+id/textView17" android:text="Nos verres"/>
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBlanc"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBlanc"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBlanc" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Nos rouges"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRouge"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRouge"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRouge" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Nos rosés"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRose"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRose"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRose" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Nos magnums"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMagnum"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMagnum"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Nos verres"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonVerre"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonVerre"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonVerre" />
 
     <TextView
         android:id="@+id/textView15"
@@ -132,9 +224,9 @@
         android:textAlignment="center"
         android:textColor="@color/colorTextAccueil"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonChampagne"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonChampagne"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonChampagne" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" />
 
     <TextView
         android:id="@+id/textView16"
@@ -150,5 +242,18 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButtonBiere"
         app:layout_constraintStart_toStartOf="@+id/imageButtonBiere"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" />
-    <TextView android:textColor="@color/colorTextAccueil" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@+id/imageButtonBar" android:fontFamily="@font/josefin_sansold" android:textSize="24sp" app:layout_constraintEnd_toEndOf="@+id/imageButtonBar" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/imageButtonBar" android:id="@+id/textView14" android:text="Notre bar\nNos sans alcools"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/josefin_sansold"
+        android:text="Notre bar\nNos sans alcools"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextAccueil"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

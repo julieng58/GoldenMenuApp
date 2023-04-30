@@ -9,9 +9,9 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/amatica_sc.xml" value="0.215625" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/im_fell_french_canon.xml" value="0.215625" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/font/simonetta.xml" value="0.3927083333333333" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_accueil_vins.xml" value="0.5" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_accueil_vins.xml" value="0.3072916666666667" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_bar.xml" value="0.1" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_bieres.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_bieres.xml" value="0.33" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_carte_vins.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_champagne.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/activity_demi_bouteilles.xml" value="0.1" />
@@ -37,7 +37,7 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_demi_bouteilles.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_digestif_bar.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_et_aussi.xml" value="0.1" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_fournisseur.xml" value="0.5739385065885798" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_fournisseur.xml" value="0.33" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_les_menus.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_blanc.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_demi.xml" value="0.1" />

@@ -53,7 +53,7 @@ public class BiereActivity extends AppCompatActivity {
                     QueryDocumentSnapshot next = it.next();
                     if (next.getString("brasseur").equals("401DONJO")) {
                         BiereActivity.this.listDonjon.add(BiereActivity.this.unserializeBiere(next));
-                    } else if (next.getString("brasseur").equals("401OUCHE")) {
+                    } else if (next.getString("brasseur").equals("401LOUP")) {
                         BiereActivity.this.listOuche.add(BiereActivity.this.unserializeBiere(next));
                     } else {
                         BiereActivity.this.listAutres.add(BiereActivity.this.unserializeBiere(next));

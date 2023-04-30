@@ -4,7 +4,7 @@
     <string name="IGP">(Indication géographique protégée)</string>
     <string name="adresseDonjon">Romain Flesch et Alexandre Brunier 58500 CLAMECY</string>
     <string name="adresseOuche">Thomas Mousseau 18350 OUROUER LES BOURDELINS</string>
-    <string name="adresseRurale">Vincent Robiche 58320 PARIGNY LES VAUX</string>
+    <string name="adresseVeurdre">23 route de Bourbon 03320 LE VEURDRE</string>
     <string name="alergene">🌾 : Ne contient pas de gluten\n🌱 : Convient au régime végétarien</string>
     <string name="gluten">🌾 : Ne contient pas de gluten</string>
     <string name="amorceBoissons">Nos apéritifs \nNos vins \nNos bières \n...</string>
@@ -65,4 +65,16 @@
     <string name="title_activity_test">TEst</string>
     <string name="tab_text_6">6</string>
     <string name="tab_text_7">7</string>
+
+    <string name="desc_biodubec">Des productions sur une parcelle Bio depuis 30 ans où la fraicheur et la qualité sont de mise, valorisant la richesse du terroir local. Des légumes sains et Bios que vous pouvez déguster dans nos assiettes selon la saison.</string>
+    <string name="desc_fournilstarigle">Boulangerie pâtisserie de qualité. cette boulangerie allie le beau, le bon et le Bio. Vous retrouverez leurs pains Tradition tout au long de votre repas, leurs pains spéciaux pour la cuisine ainsi que le plateau de fromages. \n Vous pouvez les découvrir dans leur boutique dans le centre ville de Nevers.</string>
+    <string name="desc_rougeaux">Ferrue des escargots, elle peut vous accueillir dans son élevage à la chapelle Monlinard dans le Cher (18) et vous faire découvrir son univers au rythme des escargots et de la cueillette.</string>
+    <string name="desc_maisonFromages">Livrés par Amandine de la maison du fromage, vous pouvez déguster sur notre plateau, des fromages variés, du corsé, du doux, du moelleux, du fondant, vache, chèvre et brebis, pâte molle, pâte lavée, pâte cuite… Vous trouverez votre bonheur.</string>
+    <string name="desc_gautheron">Paysan et maraîcher Bio, conduite en agriculture biologique. Il nous livre également ses oeufs élevés en plein air.</string>
+    <string name="desc_safran">Nous avons découvert le safran Nivernais. Nous tenions à vous le faire partager dans nos plats. Un safran 100\% naturel, cultivé sur une exploitation à découvrir.</string>
+    <string name="desc_auron">Fabrication artisanale française en Bio. Nous travaillons ses huiles pour certaines entrées et parfois sur nos desserts. L\'huilerie perpétue depuis plus de 150 ans un savoir-faire cher au Berry \: la valorisation des fruits sauvages régionaux. Vous pouvez vous même faire votre propre huile de noix directement à la propriété. A découvrir.</string>
+    <string name="desc_piscimorvan">Au pied de Châteu-Chinon, en bordure de l\'Yonne, vous trouverez la pisciculture de Corancy. On y trouve des truites arc-en-ciel, des truites Fario et des saumons de Fontaine de qualité.</string>
+    <string name="desc_donjon">Sur les territoirs des ducs et des vignobles de Bourgogne. Brasseur de bière classique ou originale, puissante ou douce\? Vous pouvez découvrir leurs vières, blondes, blanches, ambrées, noires, à la rose, cerise, cervoise, triples, quintuples, IPA ou éphémères… Dans les festivals de jeu de rôle, salon brassicole ou fêtes médiévales.</string>
+    <string name="desc_loup">Bière artisanale du Bourbonnais installé dans une chapelle du XIIème siècle dans le centre bourg du Veurdre depuis 2017.\nBière Bio brassée avec des céréales d\'agonges, du malt d\'Auvergne et du Cher et des houblons européens. Un grand passionné, MATHIEU GUEMAERE vous fera partager son savoir faire avec plaisir et vous racontera cette histoire ou légende du loup du VEURDRE.</string>
+    <string name="desc_font">A Tartaras, tout près des Monts Lyonnais, leurs terroir permet d\'exprimer pleinement toutes les saveurs de leurs fruits. Patrick Font travaille les fruits de saison à maturité pour en tirer le meilleur et l'authenticité gustative.</string>
 </resources>
