@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_biere.xml" value="0.1935" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_bouteillerose.xml" value="0.1935" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_magnum.xml" value="0.1935" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/drawable/ic_verrerouge.xml" value="0.1935" />
@@ -37,7 +38,7 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_demi_bouteilles.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_digestif_bar.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_et_aussi.xml" value="0.1" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_fournisseur.xml" value="0.33" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_fournisseur.xml" value="0.67" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_les_menus.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_blanc.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_demi.xml" value="0.1" />
@@ -50,6 +51,7 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_plus_au_sud_blanc.xml" value="0.25" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_plus_au_sud_rouge.xml" value="0.67" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_rhone_demi.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_t_est.xml" value="0.3625" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vd_rhone_blanc.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vd_rhone_rouge.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_vdp_blanc.xml" value="0.1828125" />

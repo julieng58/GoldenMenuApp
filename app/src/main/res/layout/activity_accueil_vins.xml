@@ -18,29 +18,30 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/imageButtonBar"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:background="#00FFFFFF"
-        android:onClick="clickOnBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonMagnum"
-        app:srcCompat="@drawable/ic_alcool" />
-
-    <ImageButton
         android:id="@+id/imageButtonBiere"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="250dp"
         android:background="#00FFFFFF"
         android:onClick="clickOnBiere"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/textView15"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBar"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_biere" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBar"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:onClick="clickOnBar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBiere"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonBiere"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_alcool" />
 
     <ImageButton
         android:id="@+id/imageButtonBlanc"
@@ -109,8 +110,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageButtonMagnum"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonMagnum"
         app:layout_constraintStart_toEndOf="@+id/imageButtonVerre"
-        app:srcCompat="@drawable/ic_bouteillechampagne"
-        tools:visibility="visible" />
+        app:srcCompat="@drawable/ic_bouteillechampagne" />
 
     <ImageButton
         android:id="@+id/imageButtonMagnum"
@@ -224,6 +224,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorTextAccueil"
         android:textSize="24sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" />
@@ -238,7 +239,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorTextAccueil"
         android:textSize="24sp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/imageButtonBiere"
         app:layout_constraintStart_toStartOf="@+id/imageButtonBiere"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBiere" />
@@ -256,4 +257,11 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButtonBar"
         app:layout_constraintStart_toStartOf="@+id/imageButtonBar"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

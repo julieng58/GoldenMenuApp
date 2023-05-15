@@ -412,12 +412,21 @@
         <TextView android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageView4" android:id="@+id/aoc1" android:text="@string/adresseDonjon"/>
         <TextView android:layout_marginEnd="16dp" android:textAlignment="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/josefin_sansold" android:textSize="18sp" android:textColor="#000000" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/aoc1" android:id="@+id/headerPrix" android:text="@string/headerPrix33"/>
         <TextView android:layout_marginEnd="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="#000000" app:layout_constraintEnd_toStartOf="@+id/S1prix1" android:layout_marginTop="70dp" android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/aoc1" app:layout_constraintStart_toStartOf="parent" android:fontFamily="@font/josefin_sansold" android:id="@+id/S1label1"/>
-        <ImageView android:layout_width="255dp" android:layout_height="49dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/nomPage" app:srcCompat="@drawable/bieredonjon_300x95" android:id="@+id/imageView4"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="255dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomPage"
+            app:srcCompat="@drawable/bieredonjon_300x95" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="255dp"
-            android:layout_height="49dp"
+            android:layout_height="130dp"
             android:layout_marginTop="32dp"
 
             app:layout_constraintEnd_toEndOf="parent"

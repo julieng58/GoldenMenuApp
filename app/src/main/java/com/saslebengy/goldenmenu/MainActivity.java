@@ -11,6 +11,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.saslebengy.goldenmenu.R;
+import com.saslebengy.goldenmenu.barTab.BarActivity;
+import com.saslebengy.goldenmenu.soloPageVin.BiereActivity;
 import com.tomer.fadingtextview.FadingTextView;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -60,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickOnVins(View view) {
         startActivity(new Intent(this, AccueilVins.class));
+    }
+
+    public void clickOnAperos(View view) {
+        startActivity(new Intent(this, BarActivity.class));
+    }
+
+    public void clickOnBieres(View view) {
+        startActivity(new Intent(this, BiereActivity.class));
     }
 
     public void clickOnMenus(View view) {
