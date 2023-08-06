@@ -33,7 +33,7 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_blanc.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_demi.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_bourgogne_rouge.xml" value="0.1" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_carte.xml" value="0.1" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_carte.xml" value="0.33" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_carte_vins.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_demi_bouteilles.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_digestif_bar.xml" value="0.1" />
@@ -44,7 +44,7 @@
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_demi.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_loire_rouge.xml" value="0.1" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menu25.xml" value="0.25" />
-        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menu32.xml" value="0.5" />
+        <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menu32.xml" value="0.33" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menuVegan.xml" value="0.26766304347826086" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_menuvegan.xml" value="0.3572916666666667" />
         <entry key="..\:/Users/julie/AndroidStudioProjects/GoldenMenu/app/src/main/res/layout/fragment_nos_formules.xml" value="0.5" />
@@ -63,7 +63,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
