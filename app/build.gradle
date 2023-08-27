@@ -11,8 +11,8 @@ android {
         applicationId "com.saslebengy.goldenmenu"
         minSdk 26
         targetSdk 32
-        versionCode 14
-        versionName "GoldenInflations"
+        versionCode 16
+        versionName "GoldenInflationss"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

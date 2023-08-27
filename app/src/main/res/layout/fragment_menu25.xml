@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/josefin_sansold"
-            android:text="La formule n'est pas servie le samedi soir et jours fériés"
+            android:text="La formule n'est pas servie le vendredi soir, samedi soir et jours fériés"
             android:textAlignment="center"
             android:textColor="#9E1F16"
             android:textSize="24sp"
