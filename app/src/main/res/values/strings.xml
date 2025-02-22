@@ -1,3 +1,21 @@
+<!--
+  ~ /*
+  ~  * Copyright (c) 2025 Florian Nadin
+  ~  * All rights reserved.
+  ~  * Last modified 18/08/2024 11:46
+  ~  *
+  ~  * Ce fichier fait partie du logiciel cédé conformément au contrat signé entre les parties.
+  ~  *
+  ~  * Toute utilisation, modification ou distribution du code source est soumise aux conditions de la cession :
+  ~  * - Le logiciel est fourni en l'état, sans garantie d'aucune sorte.
+  ~  * - L'utilisation est restreinte à l'usage prévu par le cessionnaire.
+  ~  * - Toute reproduction ou commercialisation du code sans autorisation expresse est interdite.
+  ~  * - Le cessionnaire est tenu de préserver la confidentialité du code source.
+  ~  *
+  ~  * Voir le fichier README.md pour plus de détails sur les conditions d'utilisation.
+  ~  */
+  -->
+
 <resources>
     <string name="AOC">(Appellation d\'origine controlée)</string>
     <string name="AOCs">(Appellations d\'origine controlées)</string>
@@ -33,8 +51,8 @@
     <string name="aperos">🍸 Notre bar ☕</string>
     <string name="messageVinAuVerre">Nos vins au verre (12 cl) en carafe (45 cl) ou en bouteille (75 cl)</string>
     <string name="tab_text_1">Menu enfant</string>
-    <string name="tab_text_2">Menu à 28€</string>
-    <string name="tab_text_3">Menu à 38€</string>
+    <string name="tab_text_2">Menu à 29€</string>
+    <string name="tab_text_3">Menu à 39€</string>
     <string name="tab_text_vegan">Menu végétarien</string>
     <string name="tab_text_4">La carte</string>
     <string name="tab_text_5">Nos fournisseurs</string>

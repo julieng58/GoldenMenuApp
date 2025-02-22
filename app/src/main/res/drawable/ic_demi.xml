@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (c) 2025 Florian Nadin
+  ~  * All rights reserved.
+  ~  * Last modified 25/07/2022 12:50
+  ~  *
+  ~  * Ce fichier fait partie du logiciel cédé conformément au contrat signé entre les parties.
+  ~  *
+  ~  * Toute utilisation, modification ou distribution du code source est soumise aux conditions de la cession :
+  ~  * - Le logiciel est fourni en l'état, sans garantie d'aucune sorte.
+  ~  * - L'utilisation est restreinte à l'usage prévu par le cessionnaire.
+  ~  * - Toute reproduction ou commercialisation du code sans autorisation expresse est interdite.
+  ~  * - Le cessionnaire est tenu de préserver la confidentialité du code source.
+  ~  *
+  ~  * Voir le fichier README.md pour plus de détails sur les conditions d'utilisation.
+  ~  */
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="74.19" android:viewportHeight="202.36" android:height="202.36dp" android:width="74.19dp">
     <path android:fillColor="#3de5ba" android:pathData="M70.75,178.91H3.45L23.2,68.53H51ZM19.53,123.06 L13,166.77H61.24l-6.58,-43.71Z"/>
     <path android:fillColor="#d3dd97" android:pathData="M46,48.21l4.29,17.18L23.9,65.39l4.29,-17.18ZM42.18,57.75L42.18,54.62L32,54.62v3.13Z"/>

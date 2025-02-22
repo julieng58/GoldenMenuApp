@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (c) 2025 Florian Nadin
+  ~  * All rights reserved.
+  ~  * Last modified 18/08/2024 11:42
+  ~  *
+  ~  * Ce fichier fait partie du logiciel cédé conformément au contrat signé entre les parties.
+  ~  *
+  ~  * Toute utilisation, modification ou distribution du code source est soumise aux conditions de la cession :
+  ~  * - Le logiciel est fourni en l'état, sans garantie d'aucune sorte.
+  ~  * - L'utilisation est restreinte à l'usage prévu par le cessionnaire.
+  ~  * - Toute reproduction ou commercialisation du code sans autorisation expresse est interdite.
+  ~  * - Le cessionnaire est tenu de préserver la confidentialité du code source.
+  ~  *
+  ~  * Voir le fichier README.md pour plus de détails sur les conditions d'utilisation.
+  ~  */
+  -->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fillViewport="true" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/scrollView">
     <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/frameLayout2">
 
@@ -79,7 +97,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="@font/josefin_sansold"
             android:gravity="center_horizontal"
-            android:text="🌱 Menu végétarien à 26 € 🌱"
+            android:text="🌱 Menu végétarien à 28 € 🌱"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
             android:textSize="36sp"
@@ -95,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/josefin_sansold"
-            android:text="24 € en formule entrée/plat ou plat/dessert"
+            android:text="26 € en formule entrée/plat ou plat/dessert"
             android:textAlignment="center"
             android:textColor="#9E1F16"
             android:textSize="24sp"
@@ -109,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/josefin_sansold"
-            android:text="La formule n'est pas servie le samedi soir et jours fériés"
+            android:text="La formule est servie du mardi au vendredi midi uniquement"
             android:textAlignment="center"
             android:textColor="#9E1F16"
             android:textSize="24sp"

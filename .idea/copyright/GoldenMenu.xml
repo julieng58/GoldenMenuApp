@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="/*&#10; * Copyright (c) &amp;#36;today.year Florian Nadin&#10; * All rights reserved.&#10; * Last modified &amp;#36;file.lastModified&#10; *&#10; * Ce fichier fait partie du logiciel cédé conformément au contrat signé entre les parties.&#10; * &#10; * Toute utilisation, modification ou distribution du code source est soumise aux conditions de la cession :&#10; * - Le logiciel est fourni en l'état, sans garantie d'aucune sorte.&#10; * - L'utilisation est restreinte à l'usage prévu par le cessionnaire.&#10; * - Toute reproduction ou commercialisation du code sans autorisation expresse est interdite.&#10; * - Le cessionnaire est tenu de préserver la confidentialité du code source.&#10; *&#10; * Voir le fichier README.md pour plus de détails sur les conditions d'utilisation.&#10; */" />
+    <option name="myName" value="GoldenMenu" />
+  </copyright>
+</component>

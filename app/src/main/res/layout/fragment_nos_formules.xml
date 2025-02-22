@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (c) 2025 Florian Nadin
+  ~  * All rights reserved.
+  ~  * Last modified 18/08/2024 11:42
+  ~  *
+  ~  * Ce fichier fait partie du logiciel cédé conformément au contrat signé entre les parties.
+  ~  *
+  ~  * Toute utilisation, modification ou distribution du code source est soumise aux conditions de la cession :
+  ~  * - Le logiciel est fourni en l'état, sans garantie d'aucune sorte.
+  ~  * - L'utilisation est restreinte à l'usage prévu par le cessionnaire.
+  ~  * - Toute reproduction ou commercialisation du code sans autorisation expresse est interdite.
+  ~  * - Le cessionnaire est tenu de préserver la confidentialité du code source.
+  ~  *
+  ~  * Voir le fichier README.md pour plus de détails sur les conditions d'utilisation.
+  ~  */
+  -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/frameLayout">
 
     <TextView
@@ -427,7 +445,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/josefin_sansold"
-        android:text="Nous proposons pour les enfants de moins de 10 ans un menu à 10 euros.\nComprenant un plat de poisson ou une petite pièce de boeuf accompagné d'une garniture suivi d'une glace."
+        android:text="Nous proposons pour les enfants de moins de 10 ans un menu à 12 euros.\nComprenant un plat de poisson ou une petite pièce de boeuf accompagné d'une garniture suivi d'une glace."
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
